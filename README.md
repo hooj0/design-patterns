@@ -1,5 +1,7 @@
 # Design Patterns 设计模式
-:racehorse:经典设计和应用模式聚合，各种模式实现语言有Java、Go 、Python、JavaScript。有些设计模式无法实现，主要由于语言特性的局限性。
+:racehorse:经典设计和应用模式聚合，各种模式的实现语言有Java、Go 、Python、JavaScript。有些设计模式无法实现，主要由于语言特性的局限性。
+
+在此之前，可以了解或需要知道 设计模式中的设计原则、UML中接口和类的各种关联关系表达方式。
 
 ## 创造型模式  `Creational Patterns`
 
@@ -42,7 +44,7 @@
 |           观察者  `Observer`            | 提供回调以通知事件/数据更改                                  | Java \| Python \| Go \| JavaScript |
 |             状态 ` State `              | 根据内部状态封装同一对象的不同行为                           | Java \| Python \| Go \| JavaScript |
 |            策略 ` Strategy `            | 允许在运行时选择算法的行为                                   | Java \| Python \| Go \| JavaScript |
-|    模板方法 <br/>` Template Method`     | 定义一个将某些方法推迟到子类的框架类                         | Java \| Python \| Go \| JavaScript |
+|    模板方法 <br/>` Template Method`     | 定义一个框架类将某些方法推迟到子类中实现                     | Java \| Python \| Go \| JavaScript |
 |           访问者 ` Visitor `            | 将算法与其运行的对象分开                                     | Java \| Python \| Go \| JavaScript |
 |              空对象 `Null`              | 通过一个无意义的对象来代替没有对象这个状态<br/>它使得你不用额外对空对象进行处理。 | Java \| Python \| Go \| JavaScript |
 |             注册 `Registry`             | 跟踪给定类的所有子类                                         | Java \| Python \| Go \| JavaScript |
@@ -103,9 +105,9 @@
 
 ## 分析模式 `Profiling Patterns`
 
-|            模式             | 描述               |              实现语言              |
-| :-------------------------: | ------------------ | :--------------------------------: |
-| 时序功能 `Timing Functions` | 包装函数并记录执行 | Java \| Python \| Go \| JavaScript |
+|              模式               | 描述                       |              实现语言              |
+| :-----------------------------: | -------------------------- | :--------------------------------: |
+| 时序函数模式 `Timing Functions` | 包装函数并记录执行顺序信息 | Java \| Python \| Go \| JavaScript |
 
 
 
@@ -119,9 +121,9 @@
 
 ## 反对者模式 `Anti-Patterns`
 
-|                模式                | 描述                                                      |              实现语言              |
-| :--------------------------------: | --------------------------------------------------------- | :--------------------------------: |
-| 级联故障<br/> `Cascading Failures` | 互连部件系统中的故障<br/>其中部件的故障导致多米诺骨牌效应 | Java \| Python \| Go \| JavaScript |
+|                模式                | 描述                                                         |              实现语言              |
+| :--------------------------------: | ------------------------------------------------------------ | :--------------------------------: |
+| 级联故障<br/> `Cascading Failures` | 互连部件系统中的故障，其中部件的故障导致              <br/>多米诺骨牌效应 | Java \| Python \| Go \| JavaScript |
 
 
 
