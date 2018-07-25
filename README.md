@@ -26,7 +26,7 @@
 | 组合 `Composite`  | 封装并提供对许多不同对象的访问                               | Java \| Python \| Go \| JavaScript |
 | 装饰  `Decorator` | 静态或动态地向对象添加行为                                   | Java \| Python \| Go \| JavaScript |
 |  外观   `Facade`  | 使用一种类型作为许多其他类型的API                            | Java \| Python \| Go \| JavaScript |
-| 享元 `Flyweight`  | 重用具有`相似/相同`状态的对象的现有实例以最小化资源使用      | Java \| Python \| Go \| JavaScript |
+| 享元 `Flyweight`  | 重用具有`相似/相同`状态的对象的现有实例以最小化资源使用 :racehorse: | Java \| Python \| Go \| JavaScript |
 |   代理  `Proxy`   | 为对象提供代理以控制其操作                                   | Java \| Python \| Go \| JavaScript |
 
 
@@ -38,7 +38,7 @@
 | 责任链<br/> ` Chain of Responsibility ` | 通过为对象提供处理请求的机会，<br/>避免将发送方与接收方耦合  | Java \| Python \| Go \| JavaScript |
 |            命令   `Command`             | 捆绑命令和参数以便稍后调用                                   | Java \| Python \| Go \| JavaScript |
 |          解释器 `Interpreter`           | 通常定义了一个语言的语法，<br/>然后解析相应语法的语句。      | Java \| Python \| Go \| JavaScript |
-|           迭代器  `Iterator`            | 提供一个一致的方法来顺序访问集合中的对象<br/>这个方法与底层的集合的具体实现无关。 | Java \| Python \| Go \| JavaScript |
+|           迭代器  `Iterator`            | 提供一个一致的方法来顺序访问集合中的对象:racehorse:  <br/>这个方法与底层的集合的具体实现无关。 | Java \| Python \| Go \| JavaScript |
 |           中介者   `Mediator`           | 连接对象并充当代理                                           | Java \| Python \| Go \| JavaScript |
 |            备忘录 `Memento`             | 生成可用于返回先前状态的不透明令牌                           | Java \| Python \| Go \| JavaScript |
 |           观察者  `Observer`            | 提供回调以通知事件/数据更改                                  | Java \| Python \| Go \| JavaScript |
