@@ -38,7 +38,7 @@
 | 责任链<br/> ` Chain of Responsibility ` | 通过为对象提供处理请求的机会，<br/>避免将发送方与接收方耦合  | Java \| Python \| Go \| JavaScript |
 |            命令   `Command`             | 捆绑命令和参数以便稍后调用                                   | Java \| Python \| Go \| JavaScript |
 |          解释器 `Interpreter`           | 通常定义了一个语言的语法，<br/>然后解析相应语法的语句。      | Java \| Python \| Go \| JavaScript |
-|           迭代器  `Iterator`            | 提供一个一致的方法来顺序访问集合中的对象:racehorse::racehorse: <br/>这个方法与底层的集合的具体实现无关。 | Java \| Python \| Go \| JavaScript |
+|           迭代器  `Iterator`            | 提供一个一致的方法来顺序访问集合中的对象:racehorse::racehorse::racehorse: <br/>这个方法与底层的集合的具体实现无关。 | Java \| Python \| Go \| JavaScript |
 |           中介者   `Mediator`           | 连接对象并充当代理                                           | Java \| Python \| Go \| JavaScript |
 |            备忘录 `Memento`             | 生成可用于返回先前状态的不透明令牌                           | Java \| Python \| Go \| JavaScript |
 |           观察者  `Observer`            | 提供回调以通知事件/数据更改                                  | Java \| Python \| Go \| JavaScript |
@@ -67,7 +67,7 @@
 
 |                  模式                  | 描述                                                         |              实现语言              |
 | :------------------------------------: | ------------------------------------------------------------ | :--------------------------------: |
-|          N道屏障 `N-Barrier`           | 阻止进程继续进行，直到所有N个进程都到达障碍                  | Java \| Python \| Go \| JavaScript |
+|          N道屏障 `N-Barrier`           | 阻止进程继续进行，直到所有N个进程都到达障碍 :racehorse:  :racehorse: | Java \| Python \| Go \| JavaScript |
 |  有界并行<br/> `Bounded Parallelism`   | 使用资源限制完成大量独立任务                                 | Java \| Python \| Go \| JavaScript |
 |            广播 `Broadcast`            | 同时将消息传输给所有收件人                                   | Java \| Python \| Go \| JavaScript |
 |          协同程序`Coroutines`          | 允许在某些位置暂停和恢复执行的子程序                         | Java \| Python \| Go \| JavaScript |
@@ -105,9 +105,9 @@
 
 ## 分析模式 `Profiling Patterns`
 
-|              模式               | 描述                       |              实现语言              |
-| :-----------------------------: | -------------------------- | :--------------------------------: |
-| 时序函数模式 `Timing Functions` | 包装函数并记录执行顺序信息 | Java \| Python \| Go \| JavaScript |
+|              模式               | 描述                                                         |              实现语言              |
+| :-----------------------------: | ------------------------------------------------------------ | :--------------------------------: |
+| 时序函数模式 `Timing Functions` | 包装函数并记录执行顺序信息 :racehorse:  :racehorse:  :racehorse:  :racehorse:  :racehorse:  :racehorse: | Java \| Python \| Go \| JavaScript |
 
 
 
@@ -121,9 +121,9 @@
 
 ## 反对者模式 `Anti-Patterns`
 
-|                模式                | 描述                                                        |              实现语言              |
-| :--------------------------------: | ----------------------------------------------------------- | :--------------------------------: |
-| 级联故障<br/> `Cascading Failures` | 互连部件系统中的故障，其中部件的故障导致<br/>多米诺骨牌效应 | Java \| Python \| Go \| JavaScript |
+|                模式                | 描述                                                         |              实现语言              |
+| :--------------------------------: | ------------------------------------------------------------ | :--------------------------------: |
+| 级联故障<br/> `Cascading Failures` | 互连部件系统中的故障，其中部件的故障导致 :racehorse:  :racehorse:  :racehorse:  :racehorse:  :racehorse: <br/>多米诺骨牌效应 | Java \| Python \| Go \| JavaScript |
 
 
 
