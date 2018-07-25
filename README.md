@@ -67,7 +67,7 @@
 
 |                  模式                  | 描述                                                         |              实现语言              |
 | :------------------------------------: | ------------------------------------------------------------ | :--------------------------------: |
-|          N道屏障 `N-Barrier`           | 阻止进程继续进行，直到所有N个进程都到达障碍 :racehorse:  :racehorse: | Java \| Python \| Go \| JavaScript |
+|          N道屏障 `N-Barrier`           | 阻止进程继续进行，直到所有N个进程都到达障碍 :racehorse:  :racehorse:  :racehorse: | Java \| Python \| Go \| JavaScript |
 |  有界并行<br/> `Bounded Parallelism`   | 使用资源限制完成大量独立任务                                 | Java \| Python \| Go \| JavaScript |
 |            广播 `Broadcast`            | 同时将消息传输给所有收件人                                   | Java \| Python \| Go \| JavaScript |
 |          协同程序`Coroutines`          | 允许在某些位置暂停和恢复执行的子程序                         | Java \| Python \| Go \| JavaScript |
@@ -113,9 +113,9 @@
 
 ## 成语模式 `Idioms`
 
-|             模式              | 描述                                        |              实现语言              |
-| :---------------------------: | ------------------------------------------- | :--------------------------------: |
-| 功能选项 `Functional Options` | 允许使用合理的默认值和惯用替换创建干净的API | Java \| Python \| Go \| JavaScript |
+|             模式              | 描述                                                         |              实现语言              |
+| :---------------------------: | ------------------------------------------------------------ | :--------------------------------: |
+| 功能选项 `Functional Options` | 允许使用合理的默认值和惯用替换创建干净的API :racehorse:  :racehorse: | Java \| Python \| Go \| JavaScript |
 
 
 
