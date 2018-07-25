@@ -1,8 +1,8 @@
 # 单例 `Singleton`
 
-| 模式类型 | 难度  | 实用性 | 重要程度 |    经典性     |    历史性     |
-| :------: | :---: | :----: | :------: | :-----------: | :-----------: |
-|          | ★★★★★ | ★★★★★  |  ★★★★★   | :green_heart: | :green_heart: |
+| :sparkles: 模式类型 :sparkles: | :sparkles: 难度 :sparkles: | :sparkles: 实用性 :sparkles: | :sparkles: 重要程度 :sparkles: | :sparkles: 经典性 :sparkles: | :sparkles: 历史性 :sparkles: |
+| :----------------------------: | :------------------------: | :--------------------------: | :----------------------------: | :--------------------------: | :--------------------------: |
+|                                |     ★★★★★ :arrow_down:     |       ★★★★★ :arrow_up:       |        ★★★★★ :arrow_up:        |  :green_heart:  :arrow_up:   |  :green_heart:  :arrow_up:   |
 
 ## 概念
 
