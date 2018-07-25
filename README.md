@@ -97,7 +97,7 @@
 |          `Bulkheads`          | 实施故障遏制原则（即防止级联故障）                           | Java \| Python \| Go \| JavaScript |
 | 断路器<br/> `Circuit-Breaker` | 请求可能失败时停止请求流                                     | Java \| Python \| Go \| JavaScript |
 |       限期  `Deadline`        | 允许客户端在响应概率变低后停止等待响应<br/>（例如，等待页面刷新10秒后） | Java \| Python \| Go \| JavaScript |
-|   快速失败<br/> `Fail-Fast`   | 在请求开始时检查所需资源的可用性，如果不满足要求则失败       | Java \| Python \| Go \| JavaScript |
+|   快速失败<br/> `Fail-Fast`   | 在请求开始时检查所需资源的可用性，如果不满足要求则失败 :racehorse: | Java \| Python \| Go \| JavaScript |
 |      握手 `Handshaking`       | 询问组件是否可以承受更多负载，如果不能，则请求被拒绝         | Java \| Python \| Go \| JavaScript |
 |  稳定状态<br/>`Steady-State`  | 对于累积资源的每个服务，某些其他服务必须回收该资源           | Java \| Python \| Go \| JavaScript |
 
@@ -113,9 +113,9 @@
 
 ## 成语模式 `Idioms`
 
-|             模式              | 描述                                                         |              实现语言              |
-| :---------------------------: | ------------------------------------------------------------ | :--------------------------------: |
-| 功能选项 `Functional Options` | 允许使用合理的默认值和惯用替换创建干净的API :racehorse:  :racehorse: | Java \| Python \| Go \| JavaScript |
+|             模式              | 描述                                                    |              实现语言              |
+| :---------------------------: | ------------------------------------------------------- | :--------------------------------: |
+| 功能选项 `Functional Options` | 允许使用合理的默认值和惯用替换创建干净的API :racehorse: | Java \| Python \| Go \| JavaScript |
 
 
 
