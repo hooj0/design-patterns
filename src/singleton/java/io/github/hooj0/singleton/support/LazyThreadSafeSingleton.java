@@ -1,7 +1,7 @@
 package io.github.hooj0.singleton.support;
 
 /**
- * 
+ * 懒汉模式，线程安全
  * @changelog singleton lazy load & thread safe mode
  * @category singleton
  * @author hoojo
