@@ -27,15 +27,18 @@
 + **优点**
   + 节省资源，内存仅有一个对象，全局唯一实例
 + **缺点**
-  + 不能继承、不能扩展
+  + 紧耦合，不能继承、不能扩展
+  + 不能存在单例的子类
+  + 通过控制自己的创建和生命周期违反单一责任原则（SRP） 
 
 ## 模式架构
 
-
+单例模式的目的是保证一个类仅有一个实例，并提供一个访问它的全局访问点。单例模式包含的角色只有一个，就是单例类——Singleton。单例类拥有一个私有构造函数，确保用户无法通过new关键字直接实例化它。除此之外，该模式中包含一个静态私有成员变量与静态公有的工厂方法，该工厂方法负责检验实例的存在性并实例化自己，然后存储在静态成员变量中，以确保只有一个实例被创建。
 
 ### 参与角色对象
 
-
++ **使用者**：需要使用单例实例的对象
++ **提供者**：单例对象类本身
 
 ### UML关系图
 
@@ -43,15 +46,23 @@
 
 ## 代码实现
 
+在单例模式的实现过程中，需要注意如下三点：
 
+- 单例类的构造函数为私有；
+- 提供一个自身的静态私有成员变量；
+- 提供一个公有的静态工厂方法。
 
 ## 应用场景
 
-
+如系统中的日志实例对象，一个系统只需用一个日志写入实例，提供统一的日志写入实现。这样很好的规范了日志的写入格式和文件位置等；同样，系统的文件管理器，提供唯一实例管理系统文件；还有
 
 ## 应用实例参考
 
 ### `JavaSDK`
+
+- [java.lang.Runtime#getRuntime()](http://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getRuntime%28%29)
+- [java.awt.Desktop#getDesktop()](http://docs.oracle.com/javase/8/docs/api/java/awt/Desktop.html#getDesktop--)
+- [java.lang.System#getSecurityManager()](http://docs.oracle.com/javase/8/docs/api/java/lang/System.html#getSecurityManager--)
 
 ### `GoSDK`
 
