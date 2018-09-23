@@ -28,7 +28,7 @@ public class LazyThreadSafeSingleton {
 	// 构建示例对象
 	private static LazyThreadSafeSingleton instance;
 	
-	// 私有方法，放置外部实例化该对象
+	// 私有方法，禁止外部实例化该对象
 	private LazyThreadSafeSingleton() {
 	}
 	
