@@ -54,7 +54,13 @@
 - 提供一个自身的静态私有成员变量；
 - 提供一个公有的静态工厂方法。
 
-
+### 示例参考
++ [懒汉式，线程不安全](./java/io/github/hooj0/singleton/support/lazy_thread_unsafe/LazyThreadUnsafeSingleton.java)
++ [懒汉式，线程安全](./java/io/github/hooj0/singleton/support/lazy_thread_safe/LazyThreadSafeSingleton.java)
++ [饿汉式](./java/io/github/hooj0/singleton/support/hungry_thread_safe/HungryThreadSafeSingleton.java)
++ [双检锁/双重校验锁](./java/io/github/hooj0/singleton/support/double_checked_locking/DCLSingleton.java)
++ [静态内部类](./java/io/github/hooj0/singleton/support/static_inner_class/StaticInnerClassSingleton.java)
++ [枚举](./java/io/github/hooj0/singleton/support/enum_class/EnumSingleton.java)
 
 ## 应用场景
 
