@@ -8,7 +8,7 @@
 |                 模式                  | 描述                                                         |                          实现语言                          |
 | :-----------------------------------: | :----------------------------------------------------------- | :--------------------------------------------------------: |
 | [单例 `Singleton`]( ./src/singleton ) | 将一个类型的实例化对象限制为一个全局唯一的对象               | [Java](./src/singleton/java) \| Python \| Go \| JavaScript |
-|       简单工厂`Simple Factory`        | 根据参数的不同返回不同类的实例                               |             Java \| Python \| Go \| JavaScript             |
+|       [简单工厂`Simple Factory`](./src/simple-factory)        | 根据参数的不同返回不同类的实例                               |             [Java](./src/simple-factory/java) \| Python \| Go \| JavaScript             |
 |       工厂方法 `Factory Method`       | 将对象的实例化延迟到用于创建实例的专用函数                   |             Java \| Python \| Go \| JavaScript             |
 |      抽象工厂 `Abstract Factory`      | 提供用于创建相关对象族的函数                                 |             Java \| Python \| Go \| JavaScript             |
 |           建造者  `Builder`           | 使用简单对象构建复杂对象                                     |             Java \| Python \| Go \| JavaScript             |
