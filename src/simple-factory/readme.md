@@ -1,11 +1,11 @@
-# 单例 `Singleton`
+# 简单工厂 `SimpleFactory`
 
 | :sparkles:模式类型:sparkles::sparkles:|:sparkles::sparkles:难度:sparkles:  :sparkles: | :sparkles::sparkles:实用性:sparkles::sparkles: | :sparkles::sparkles:重要程度:sparkles::sparkles: |  :sparkles::sparkles:经典性:sparkles::sparkles: | :sparkles::sparkles:历史性:sparkles: |
 | :----------------------------------------: | :-----------------------------------------------: | :-------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------: |
-|                                            |                ★★★★★ :arrow_down:                 |                  ★★★★★ :arrow_up:                   |                    ★★★★★ :arrow_up:                    |              :green_heart:  :arrow_up:               |        :green_heart:  :arrow_up:         |
+|                   创造型                         |                ★★ :arrow_down:                 |                  ★★★★ :arrow_up:                   |                    ★★★★ :arrow_up:                    |              :green_heart:  :arrow_up:               |        :green_heart:  :arrow_up:         |
 
 ## 概念
-简单工厂模式(Simple Factory Pattern)： 又称为静态工厂方法(Static Factory Method)模式，它属于类创建型模式。 在简单工厂模式中，可以根据参数的不同返回不同类的实例。 简单工厂模式专门定义一个类来负责创建其他类的实例，被创建的实例通常都具有共同的父类。简单工厂一般分为：普通简单工厂、多方法简单工厂、静态方法简单工厂。
+简单工厂模式(`Simple Factory Pattern`)： 又称为静态工厂方法(`Static Factory Method`)模式，它属于类创建型模式。 在简单工厂模式中，可以根据参数的不同返回不同类的实例。 简单工厂模式专门定义一个类来负责创建其他类的实例，被创建的实例通常都具有共同的父类或接口。简单工厂一般分为：普通简单工厂、多方法简单工厂、静态方法简单工厂。
 
 ## 用途
 在创建一个对象时不向客户暴露内部细节，并提供一个创建对象的通用接口或抽象类实现。使用者只需用工厂创建需要使用接口或抽象类中的方法即可完成需要的业务调用。
@@ -29,7 +29,9 @@
 
 
 ## 代码实现
-
++ [普通简单工厂](./java/io/github/hooj0/simplefactory/support/_static)
++ [多方法简单工厂](./java/io/github/hooj0/simplefactory/support/more)
++ [静态方法简单工厂](./java/io/github/hooj0/simplefactory/support/single)
 
 
 ## 应用场景
