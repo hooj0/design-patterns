@@ -29,6 +29,13 @@
 
 
 ## 代码实现
+在实现简单工厂方法时，需要注意一下几点：
+- 工厂方法产生的对象需要有统一的继续父类或接口实现
+- 向客户端提供统一的创建工厂实例方法
+- 不向客户端提供工厂创建实例实现的相关细节或业务、不暴露内部细节
+- 
+
+### 示例参考
 + [普通简单工厂](./java/io/github/hooj0/simplefactory/support/_static)
 + [多方法简单工厂](./java/io/github/hooj0/simplefactory/support/more)
 + [静态方法简单工厂](./java/io/github/hooj0/simplefactory/support/single)
