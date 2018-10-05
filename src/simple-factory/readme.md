@@ -42,10 +42,12 @@ pass
 
 ## 代码实现
 在实现简单工厂方法时，需要注意一下几点：
-- 工厂方法产生的对象需要有统一的继续父类或接口实现
+- 定义统一规格规范的产品接口或抽象类
+- 实现产品接口或抽象类
+- 工厂方法产生的产品需要有统一的继续产品父类或接口实现
 - 向客户端提供统一的创建工厂实例方法
 - 不向客户端提供工厂创建实例实现的相关细节或业务、不暴露内部细节
-- 
+- 工厂类提供通过工厂生成产品的统一方法
 
 ### 示例参考
 + [普通简单工厂](./java/io/github/hooj0/simplefactory/support/_static)
@@ -54,13 +56,21 @@ pass
 
 
 ## 应用场景
-
+在以下情况下可以使用简单工厂模式：
+工厂类负责创建的对象比较少：由于创建的对象较少，不会造成工厂方法中的业务逻辑太过复杂。
+客户端只知道传入工厂类的参数，对于如何创建对象不关心：客户端既不需要关心创建细节，甚至连类名都不需要记住，只需要知道类型所对应的参数。
 
 
 ## 应用实例参考
 
 ### `JavaSDK` 
-
++ java.text.DateFormat
+	- public final static DateFormat getDateInstance();
+	- public final static DateFormat getDateInstance(int style);
+	- public final static DateFormat getDateInstance(int style, Locale locale);
++ KeyGenerator.getInstance("DESede")
++ Cipher.getInstance("DESede")
+	
 ### `GoSDK`
 
 ### `PythonSDK`
