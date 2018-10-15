@@ -2,7 +2,7 @@ package io.github.hooj0.builder.support.simple;
 
 /**
  * simple example, product entity class
- * 
+ * Product的构造使用了Builder，造成了紧耦合，也说明Product需要Builder才能构造对象实例
  * @author hoojo
  * @createDate 2018年10月14日 下午10:42:32
  * @file Product.java
