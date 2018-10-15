@@ -2,6 +2,8 @@ package io.github.hooj0.builder.support.complex;
 
 /**
  * complex example, product entity class
+ * 
+ * 降低 Product对Builder的耦合，Product脱离Builder也不影响代码运行编译
  * @author hoojo
  * @createDate 2018年10月22日 下午8:59:20
  * @file Product.java
