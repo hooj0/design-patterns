@@ -12,7 +12,7 @@
 |       [工厂方法 `Factory Method`](./src/factory-method)       | 将对象的实例化延迟到用于创建实例的专用函数                   |             [Java](./src/factory-method/java) \| Python \| Go \| JavaScript             |
 |      [抽象工厂 `Abstract Factory`](./src/abstract-factory)      | 提供用于创建相关对象族的函数                                 |             [Java](./src/abstract-factory/java) \| Python \| Go \| JavaScript             |
 |           [建造者  `Builder`](./src/builder)           | 使用简单对象构建复杂对象                                     |             [Java](./src/builder/java) \| Python \| Go \| JavaScript             |
-|           原型 `Prototype`            | 将一个对象作为原型，对其进行复制、克隆，<br/>产生一个和原对象类似的新对象 |             Java \| Python \| Go \| JavaScript             |
+|           [原型 `Prototype`](./src/prototype)            | 将一个对象作为原型，对其进行复制、克隆，<br/>产生一个和原对象类似的新对象 |             [Java](./src/prototype/java) \| Python \| Go \| JavaScript             |
 |         对象池 `Object Pool`          | 实例化并维护一组相同类型的对象实例                           |             Java \| Python \| Go \| JavaScript             |
 
 
