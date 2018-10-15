@@ -14,7 +14,7 @@ package io.github.hooj0.builder.support.simple;
 public class App {
 
 	public static void main(String[] args) {
-		Product product = new Product.Builder("mouse").build();
+		Product product = new Product.Builder("mouse").size(1).build();
 		System.out.println(product.getName());
 		
 		product = new Product.Builder("keyboard").size(50).price(53.0f).orderNo("122234234").build();
