@@ -75,6 +75,11 @@ public final class Product {
 		}
 		
 		public Product build() {
+			
+			if (this.size <= 0) {
+				throw new IllegalArgumentException("size can not be zore.");
+			}
+			
 			return new Product(this);
 		}
 	}
