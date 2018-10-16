@@ -1,5 +1,7 @@
 package io.github.hooj0.prototype.support;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
 /**
  * prototype pattern product class support
  * @author hoojo
@@ -39,9 +41,15 @@ public class PrototypeProduct implements Cloneable {
 	@Override
 	public PrototypeProduct clone() throws CloneNotSupportedException {
 		
-		PrototypeProduct clone = new PrototypeProduct(this.name);
+		// PrototypeProduct clone = new PrototypeProduct(this.name);
+		PrototypeProduct clone = (PrototypeProduct) super.clone();
 		clone.setId(System.currentTimeMillis());
 		
 		return clone;
+	}
+	
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
 	}
 }
