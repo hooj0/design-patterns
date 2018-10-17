@@ -39,7 +39,10 @@
 	
 ## 代码实现
 对象池模式的实现要点如下：
-+ 需要定义对象池接口或抽象类，定制需要实现产品的功能方法
+	+ 需要定义对象池接口或抽象类`AbstractObjectPool`，定制创建产品的功能方法`create()`、获取对象实例的方法`checkOut()`、回收对象实例的方法`checkIn()`
+	+ 需要定义具体的产品对象`Product`，这个对象是对象池的泛型对象
+	+ 定义具体产品对象的对象池`ProductPool`，继承`AbstractObjectPool`，实现`create`方法提供产品的创建实例
+	+ 对象池要保持线程安全性
 
 ### 示例参考
 + [对象池模式](./java/io/github/hooj0/objectpool/)
