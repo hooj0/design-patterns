@@ -16,7 +16,9 @@
 
 
 ### 参与角色对象
-+ **AbstractObjectPool**：工厂接口、工厂抽象类，提供生产不同的产品工厂的抽象类
++ **AbstractObjectPool**：对象池抽象类，提供对象池对象的创建、获取、缓存方法
++ **ProductPool**：具体产品对象池，继承`AbstractObjectPool`，实现`create`方法提供产品的创建实例
++ **Product**：具体产品对象，是`ProductPool`对象池的泛型对象
 
 
 ### UML关系图
