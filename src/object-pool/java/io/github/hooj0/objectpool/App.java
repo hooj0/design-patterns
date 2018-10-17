@@ -41,5 +41,8 @@ public class App {
 			Product io.github.hooj0.objectpool.support.Product@a14482 id=2
 			Product io.github.hooj0.objectpool.support.Product@52e922 id=1
 		 */
+		
+		System.out.println(pool.checkOut());
+		System.out.println(pool.checkOut());
 	}
 }
