@@ -42,6 +42,12 @@ public class App {
 			Product io.github.hooj0.objectpool.support.Product@52e922 id=1
 		 */
 		
+		// 向对象池添加对象，预先创建一些对象，方便后续直接取
+		pool.checkIn(product);
+		pool.checkIn(pool.checkOut());
+		pool.checkIn(pool.checkOut());
+		pool.checkIn(pool.checkOut());
+		
 		System.out.println(pool.checkOut());
 		System.out.println(pool.checkOut());
 	}
