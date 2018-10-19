@@ -21,7 +21,7 @@
 
 |       模式        | 描述                                                         |              实现语言              |
 | :---------------: | ------------------------------------------------------------ | :--------------------------------: |
-| 适配器 `Adapter ` | 将一个接口转换成对方希望的另一个接口，<br/>使接口不兼容的那些类可以一起工作 | Java \| Python \| Go \| JavaScript |
+| [适配器 `Adapter`](./src/structural/adapter) | 将一个接口转换成对方希望的另一个接口，<br/>使接口不兼容的那些类可以一起工作 | [Java](./src/structural/adapter/java) \| Python \| Go \| JavaScript |
 |  桥接  `Bridge`   | 将接口与其实现分离，以便两者可以独立变化                     | Java \| Python \| Go \| JavaScript |
 | 组合 `Composite`  | 封装并提供对许多不同对象的访问                               | Java \| Python \| Go \| JavaScript |
 | 装饰  `Decorator` | 静态或动态地向对象添加行为                                   | Java \| Python \| Go \| JavaScript |
