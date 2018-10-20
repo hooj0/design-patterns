@@ -2,7 +2,8 @@ package io.github.hooj0.adapter.support.message;
 
 /**
  * email message interface, defined send email method function.
- * 邮件发送接口定义
+ * 邮件发送接口定义实现，可以正常的发送邮件
+ * 
  * @author hoojo
  * @createDate 2018年10月28日 上午10:53:53
  * @file EmailMessageSupport.java
