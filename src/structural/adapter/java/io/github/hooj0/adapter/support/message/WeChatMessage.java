@@ -2,7 +2,7 @@ package io.github.hooj0.adapter.support.message;
 
 /**
  * wechat message interface, defined send message method function.
- * 发送微信的接口，定义发送微信的姿势
+ * 发送微信的接口，定义发送微信的姿势，发送者只会发送微信，他掌握了这个姿势
  * 
  * @author hoojo
  * @createDate 2018年10月28日 上午10:45:38
