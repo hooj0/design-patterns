@@ -1,5 +1,7 @@
 package io.github.hooj0.adapter;
 
+import io.github.hooj0.adapter.support.drivingcar.BusAdapter;
+import io.github.hooj0.adapter.support.drivingcar.Driver;
 import io.github.hooj0.adapter.support.message.EmailMessageAdapter;
 import io.github.hooj0.adapter.support.message.Sender;
 
@@ -22,5 +24,9 @@ public class App {
 		// 终于，发送者利用发送邮件的方式，完成了发送微信消息
 		Sender sender = new Sender(new EmailMessageAdapter());
 		sender.sendMessage();
+		
+		// 老司机终于可以开着巴士回家了
+		Driver driver = new Driver(new BusAdapter());
+		driver.drive();
 	}
 }
