@@ -2,8 +2,8 @@ package io.github.hooj0.adapter.support.message;
 
 /**
  * sender support wechat message interface
+ * 发送者拥有发送微信的技能，他等待获取一个微信发送接口，然后就能实现发送微信消息
  * 
- * 发送者需要实现发送微信的技能，他等待获取一个微信发送技能，然后实现发送微信消息
  * @author hoojo
  * @createDate 2018年10月28日 上午10:59:23
  * @file Sender.java
