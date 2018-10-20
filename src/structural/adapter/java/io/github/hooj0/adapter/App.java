@@ -1,5 +1,8 @@
 package io.github.hooj0.adapter;
 
+import io.github.hooj0.adapter.support.message.EmailMessageAdapter;
+import io.github.hooj0.adapter.support.message.Sender;
+
 /**
  * adapter pattern application client class
  * 
@@ -16,5 +19,8 @@ public class App {
 
 	public static void main(String[] args) {
 
+		// 终于，发送者利用发送邮件的方式，完成了发送微信消息
+		Sender sender = new Sender(new EmailMessageAdapter());
+		sender.sendMessage();
 	}
 }
