@@ -1,6 +1,7 @@
 package io.github.hooj0.adapter;
 
 import io.github.hooj0.adapter.support.drivingcar.BusAdapter;
+import io.github.hooj0.adapter.support.drivingcar.Car;
 import io.github.hooj0.adapter.support.drivingcar.Driver;
 import io.github.hooj0.adapter.support.message.EmailMessageAdapter;
 import io.github.hooj0.adapter.support.message.Sender;
@@ -26,7 +27,7 @@ public class App {
 		sender.sendMessage();
 		
 		// 老司机终于可以开着巴士回家了
-		Driver driver = new Driver(new BusAdapter());
+		Car driver = new Driver(new BusAdapter());
 		driver.drive();
 	}
 }
