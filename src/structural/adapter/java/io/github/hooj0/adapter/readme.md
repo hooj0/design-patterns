@@ -87,4 +87,73 @@ public class App {
 ```
 
 ## 案例：老司机开车
-老司机只会开小汽车，但不会开巴士，一天小汽车坏了，老司机不能走着回家，于是他准备开巴士回家。现在他需要
+老司机只会开小汽车，但不会开巴士，一天小汽车坏了，老司机不能走着回家，于是他准备开巴士回家。现在他需要利用开汽车的技能去开巴士，这可不是件容易的事情。
+
+### 定义 开汽车的接口
+老司机只会开小汽车，这时候需要汽车的接口，和一些开汽车的技能。
+```java
+public interface Car {
+	
+	void drive();
+}
+```
+
+### 定义 司机
+一个老司机，他掌握开汽车的技能，那需要实现 Car 接口，实现开汽车的技能
+```java
+public class Driver implements Car {
+
+	private Car car;
+	
+	public Driver(Car car) {
+		this.car = car;
+	}
+	
+	@Override
+	public void drive() {
+		this.car.drive();
+	}
+}
+```
+
+### 定义 巴士接口
+因为老司机的小汽车坏了，只有巴士能开，那么巴士应该具有开跑的功能
+```java
+public class Bus {
+
+	public void go() {
+		System.out.println("bus go go go……");
+	}
+}
+```
+
+### 定义 适配器
+因为老司机的小汽车坏了，只有巴士能开，现在让老司机用开小汽车的姿势去开巴士
+```java
+public class BusAdapter implements Car {
+
+	private Bus bus;
+	
+	public BusAdapter() {
+		this.bus = new Bus();
+	}
+	
+	@Override
+	public void drive() {
+		this.bus.go();
+	}
+}
+```
+
+### 老司机发车
+```java
+public class App {
+
+	public static void main(String[] args) {
+
+		// 老司机终于可以开着巴士回家了
+		Driver driver = new Driver(new BusAdapter());
+		driver.drive();
+	}
+}
+```
