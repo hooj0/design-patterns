@@ -71,14 +71,14 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
-+ java.util.Calendar#getInstance()
-+ java.util.Arrays#asList()
-+ java.util.ResourceBundle#getBundle()
-+ java.sql.DriverManager#getConnection()
-+ java.sql.Connection#createStatement()
-+ java.sql.Statement#executeQuery()
-+ java.text.NumberFormat#getInstance()
-+ javax.xml.transform.TransformerFactory#newInstance()
++ `java.util.Calendar#getInstance()`
++ `java.util.Arrays#asList()`
++ `java.util.ResourceBundle#getBundle()`
++ `java.sql.DriverManager#getConnection()`
++ `java.sql.Connection#createStatement()`
++ `java.sql.Statement#executeQuery()`
++ `java.text.NumberFormat#getInstance()`
++ `javax.xml.transform.TransformerFactory#newInstance()`
 
 ### `GoSDK`
 
