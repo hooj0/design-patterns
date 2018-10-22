@@ -1,7 +1,7 @@
 package io.github.hooj0.adapter.objectmode;
 
 /**
- * class mode adapter pattern client application
+ * object mode adapter pattern client application
  * 
  * @author hoojo
  * @createDate 2018年10月21日 下午8:21:19
