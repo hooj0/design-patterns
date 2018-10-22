@@ -64,12 +64,12 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
-+ java.text.DateFormat
-	- public final static DateFormat getDateInstance();
-	- public final static DateFormat getDateInstance(int style);
-	- public final static DateFormat getDateInstance(int style, Locale locale);
-+ KeyGenerator.getInstance("DESede")
-+ Cipher.getInstance("DESede")
++ `java.text.DateFormat`
+	- `public final static DateFormat getDateInstance();`
+	- `public final static DateFormat getDateInstance(int style);`
+	- `public final static DateFormat getDateInstance(int style, Locale locale);`
++ `KeyGenerator.getInstance("DESede")`
++ `Cipher.getInstance("DESede")`
 	
 ### `GoSDK`
 
