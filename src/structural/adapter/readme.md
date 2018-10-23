@@ -59,7 +59,11 @@
 + 最后客户端通过适配者类**Adaptee**获取目标对象的实现，传入**Adapter**适配器就能完成目标接口的业务调用。
 
 ### 示例参考
-+ [适配器模式](./java/io/github/hooj0/adapter/)
++ [适配器模式 - 老司机开车](./java/io/github/hooj0/adapter/support/drivingcar)
++ [适配器模式 - 我要发微信](./java/io/github/hooj0/adapter/support/message)
++ [适配器模式 - 类模式](./java/io/github/hooj0/adapter/classmode)
++ [适配器模式 - 对象模式](./java/io/github/hooj0/adapter/objectmode)
++ [适配器模式 - 接口模式](./java/io/github/hooj0/adapter/interfacemode)
 
 ## 应用场景
 假设一下你的存储卡里有一些照片，你需要把它们转移到你的电脑上。为了转移它们，你 需要一些与你的电脑接口兼容的适配器，这样你就可以将存储卡连接到你的电脑上。这里， 读卡器就起到了适配器的作用。更经典的例子就是人尽皆知的电源适配器了，一个三脚的 插头不能连接到两个孔的插座上，它需要一个电源适配器，使它与两个分叉的插座兼容。
