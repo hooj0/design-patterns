@@ -1,6 +1,6 @@
 package io.github.hooj0.prototype;
 
-import io.github.hooj0.prototype.support.PrototypePatternProduct;
+import io.github.hooj0.prototype.support.PrototypeProduct;
 
 /**
  * prototype pattern app client application
@@ -17,7 +17,7 @@ public class App {
 
 	public static void main(String[] args) throws CloneNotSupportedException {
 
-		PrototypePatternProduct product = new PrototypePatternProduct("jack");
+		PrototypeProduct product = new PrototypeProduct("jack");
 		product.setId(122344L);
 		
 		System.out.println(product);
