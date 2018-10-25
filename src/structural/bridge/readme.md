@@ -5,10 +5,10 @@
 |                   对象结构型模式                         |                ★★★★ :arrow_down:                 |                  ★★★★ :arrow_up:                   |                    ★★★★ :arrow_up:                    |              :green_heart:  :arrow_up:               |        :green_heart:  :arrow_up:         |
 
 ## 概念
-桥接模式(`Bridge Pattern`)：将抽象部分与它的实现部分分离，使它们都可以独立地变化。它是一种对象结构型模式，又称为柄体(`Handle and Body`)模式或接口(`Interface`)模式。
+桥接模式(`Bridge Pattern`)：将抽象部分与它的实现部分分离，使它们都可以独立地变化。它是一种对象结构型模式，又称为柄体(`Handle and Body`)模式或接口(`Interface`)模式。简单的说：桥模式更倾向于组合而不是继承，实现细节从层次结构推送到具有单独层次结构的另一个对象。
 
 ## 用途
-
+桥接模式就是把事物和其具体实现分开，使他们可以各自独立的变化。桥接的用意是：将抽象化与实现化解耦，使得二者可以独立变化。
 
 ## 模式架构
 
@@ -32,13 +32,19 @@
 
 ## 应用场景
 
+桥接模式适用于：
++ 希望**避免抽象与其实现之间的永久绑定**。例如，必须在运行时选择或切换实现时可能就是这种情况。
++ **抽象及其实现都应该通过子类化来扩展**。在这种情况下，桥接模式允许**组合**不同的抽象和实现并独立扩展它们
++ **抽象实现的变化应该对客户没有影响**， 也就是说，他们的代码不应该被重新编译。
++ 你有很多课程。这样的类层次结构表明需要将对象分成两部分。`Rumbaugh`使用术语“嵌套的泛化”来引用这样的类层次结构
++ 在**多个对象之间共享一个实现**（可能使用引用计数），这个事实应该从客户端隐藏。一个简单的例子是`Coplien`的`String`类，其中多个对象可以共享相同的字符串表示。
 
 
 ## 应用实例参考
 
 ### `JavaSDK` 
-+ AWT (It provides an abstraction layer which maps onto the native OS the windowing support.)
-+ JDBC
++ `AWT` (`It provides an abstraction layer which maps onto the native OS the windowing support`.)
++ `JDBC`
 
 ### `GoSDK`
 
