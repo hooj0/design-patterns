@@ -18,8 +18,10 @@
 
 
 ### 参与角色对象
-
-
++ **Abstraction**：定义抽象类的接口
++ **RefinedAbstraction**：扩充抽象类
++ **Implementor**：定义实现类接口
++ **ConcreteImplementor**：具体实现类
 
 ### UML关系图
 
