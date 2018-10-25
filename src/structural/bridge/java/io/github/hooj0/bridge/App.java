@@ -1,5 +1,11 @@
 package io.github.hooj0.bridge;
 
+import io.github.hooj0.bridge.support.abstraction.AbstractRemoteControl;
+import io.github.hooj0.bridge.support.abstraction.OriginalFactoryRemoteControl;
+import io.github.hooj0.bridge.support.abstraction.SuperRemoteControl;
+import io.github.hooj0.bridge.support.implementor.HisenseTV;
+import io.github.hooj0.bridge.support.implementor.XiaoMiTV;
+
 /**
  * bridge pattern application client class
  * 
@@ -16,5 +22,16 @@ public class App {
 
 	public static void main(String[] args) {
 
+		AbstractRemoteControl remoteControl = new SuperRemoteControl(new HisenseTV());
+		remoteControl.boot();
+		remoteControl.changedChannel();
+		remoteControl.changedVolume();
+		remoteControl.shutdown();
+		
+		AbstractRemoteControl remoteControl2 = new OriginalFactoryRemoteControl(new XiaoMiTV());
+		remoteControl2.boot();
+		remoteControl2.changedChannel();
+		remoteControl2.changedVolume();
+		remoteControl2.shutdown();
 	}
 }
