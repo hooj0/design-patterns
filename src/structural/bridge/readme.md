@@ -2,7 +2,7 @@
 
 | :sparkles:模式类型:sparkles::sparkles:|:sparkles::sparkles:难度:sparkles:  :sparkles: | :sparkles::sparkles:实用性:sparkles::sparkles: | :sparkles::sparkles:重要程度:sparkles::sparkles: |  :sparkles::sparkles:经典性:sparkles::sparkles: | :sparkles::sparkles:历史性:sparkles: |
 | :----------------------------------------: | :-----------------------------------------------: | :-------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------: |
-|                   对象结构型模式                         |                ★★★★ :arrow_down:                 |                  ★★★★ :arrow_up:                   |                    ★★★★ :arrow_up:                    |              :green_heart:  :arrow_up:               |        :green_heart:  :arrow_up:         |
+|                   对象结构型模式                         |                ★★★ :arrow_down:                 |                  ★★★★ :arrow_up:                   |                    ★★★ :arrow_up:                    |              :green_heart:  :arrow_up:               |        :green_heart:  :arrow_up:         |
 
 ## 概念
 桥接模式(`Bridge Pattern`)：将抽象部分与它的实现部分分离，使它们都可以独立地变化。它是一种对象结构型模式，又称为柄体(`Handle and Body`)模式或接口(`Interface`)模式。简单的说：桥模式更倾向于组合而不是继承，实现细节从层次结构推送到具有单独层次结构的另一个对象。桥接模式将继承关系转换为关联关系，从而降低了类与类之间的耦合，减少了代码编写量。
