@@ -18,10 +18,10 @@
 
 
 ### 参与角色对象
-+ **Abstraction**：定义抽象类的接口
-+ **RefinedAbstraction**：扩充抽象类
-+ **Implementor**：定义实现类接口
-+ **ConcreteImplementor**：具体实现类
++ **Abstraction**：定义抽象类的接口，完成最终业务对象业务逻辑接口的定义
++ **RefinedAbstraction**：扩充抽象类，继承`Abstraction`，使用组合利用`Implementor`实现`Abstraction`父类的方法
++ **Implementor**：定义实现类接口，定义对应于`Abstraction`的相关方法实现，可以加入相应的业务逻辑行为
++ **ConcreteImplementor**：具体实现类，继承`Implementor`类并实现其所有方法
 
 ### UML关系图
 
@@ -40,7 +40,11 @@
 
 ## 代码实现
 
+桥接模式的实现要点如下：
++ 首先定义 `Abstraction` 抽象类的接口，完成最终业务对象业务逻辑接口的定义；在`Abstraction`需要组合 `Implementor` 类，借助`Implementor` 类实现在`Abstraction`子类中完成业务。
 
+### 示例参考
++ [桥接模式](./java/io/github/hooj0/bridge/)
 
 ## 应用场景
 
