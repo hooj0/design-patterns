@@ -23,7 +23,7 @@
 | :---------------: | ------------------------------------------------------------ | :--------------------------------: |
 | [适配器 `Adapter`](./src/structural/adapter) | 将一个接口转换成对方希望的另一个接口，<br/>使接口不兼容的那些类可以一起工作 | [Java](./src/structural/adapter/java) \| Python \| Go \| JavaScript |
 |  [桥接  `Bridge`](./src/structural/bridge)   | 将接口与其实现分离，以便两者可以独立变化                     | [Java](./src/structural/bridge/java) \| Python \| Go \| JavaScript |
-| 组合 `Composite`  | 封装并提供对许多不同对象的访问                               | Java \| Python \| Go \| JavaScript |
+| [组合 `Composite`](./src/structural/composite)  | 封装并提供对许多不同对象的访问                               | [Java](./src/structural/composite/java) \| Python \| Go \| JavaScript |
 | 装饰  `Decorator` | 静态或动态地向对象添加行为                                   | Java \| Python \| Go \| JavaScript |
 |  外观   `Facade`  | 使用一种类型作为许多其他类型的API                            | Java \| Python \| Go \| JavaScript |
 | 享元 `Flyweight`  | 重用具有`相似/相同`状态的对象的现有实例以最小化资源使用 :racehorse: | Java \| Python \| Go \| JavaScript |
