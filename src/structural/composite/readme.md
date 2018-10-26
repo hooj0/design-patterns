@@ -37,6 +37,11 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
++ `javax.swing.JComponent#add(Component)`
++ `java.awt.Container#add(Component)`
++ `java.util.Map#putAll(Map)`
++ `java.util.List#addAll(Collection)`
++ `java.util.Set#addAll(Collection)`
 
 ### `GoSDK`
 
