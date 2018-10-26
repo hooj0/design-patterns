@@ -1,4 +1,4 @@
-package io.github.hooj0.composite.support;
+package io.github.hooj0.composite;
 
 /**
  * composite pattern application clien class
