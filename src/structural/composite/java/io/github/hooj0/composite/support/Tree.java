@@ -46,9 +46,9 @@ public class Tree {
 			String space = copySpace("  ", node.getLevel());
 			
 			if (node.isLeaf()) {
-				System.out.println(space + "- " + node.getName());
+				System.out.println(space + "- " + node.getName() + " /" + node.getParentId() + "-" + node.getId());
 			} else {
-				System.out.println(space + "+ " + node.getName());
+				System.out.println(space + "+ " + node.getName() + " /" + node.getParentId() + "-" + node.getId());
 				
 				for (TreeNode currentNode : node.getChild()) {
 					print(currentNode);
