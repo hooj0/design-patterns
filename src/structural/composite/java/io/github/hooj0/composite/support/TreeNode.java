@@ -29,10 +29,9 @@ public class TreeNode {
 	public TreeNode() {
 	}
 	
-	public TreeNode(int level, int id, int parentId, String name) {
+	public TreeNode(int level, int id, String name) {
 		this.level = level;
 		this.id = id;
-		this.parentId = parentId;
 		this.name = name;
 	}
 	
@@ -81,6 +80,7 @@ public class TreeNode {
 			this.child = new ArrayList<TreeNode>();
 		}
 		
+		node.setParentId(this.id);
 		this.child.add(node);
 		
 		if (this.child != null && !this.child.isEmpty()) {
