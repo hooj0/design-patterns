@@ -1,5 +1,8 @@
 package io.github.hooj0.composite;
 
+import io.github.hooj0.composite.support.Tree;
+import io.github.hooj0.composite.support.TreeNode;
+
 /**
  * composite pattern application clien class
  * 
@@ -15,6 +18,20 @@ package io.github.hooj0.composite;
 public class App {
 
 	public static void main(String[] args) {
-
+		
+		Tree tree = new Tree("Java");
+		tree.getRoot().addChild(new TreeNode(1, 1, 0, "io"));
+		tree.getRoot().addChild(new TreeNode(1, 2, 0, "net"));
+		
+		TreeNode thread = new TreeNode(1, 3, 0, "thread");
+		thread.addChild(new TreeNode(2, 31, 3, "NEW"));
+		thread.addChild(new TreeNode(2, 32, 3, "RUNNABLE"));
+		thread.addChild(new TreeNode(2, 33, 3, "BLOCKED"));
+		thread.addChild(new TreeNode(2, 34, 3, "WAITING"));
+		thread.addChild(new TreeNode(2, 35, 3, "TERMINATED"));
+		
+		tree.getRoot().addChild(thread);
+		
+		tree.print(tree.getRoot());
 	}
 }
