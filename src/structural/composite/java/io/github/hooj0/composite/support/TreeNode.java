@@ -1,5 +1,6 @@
 package io.github.hooj0.composite.support;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,10 +21,21 @@ public class TreeNode {
 	private int id;
 	private int parentId;
 	private String name;
-	private boolean leaf;
 	
+	private int level;
+	private boolean leaf = true;
 	private List<TreeNode> child;
 
+	public TreeNode() {
+	}
+	
+	public TreeNode(int level, int id, int parentId, String name) {
+		this.level = level;
+		this.id = id;
+		this.parentId = parentId;
+		this.name = name;
+	}
+	
 	public int getId() {
 		return id;
 	}
@@ -51,16 +63,28 @@ public class TreeNode {
 	public boolean isLeaf() {
 		return leaf;
 	}
+	
+	public int getLevel() {
+		return level;
+	}
 
-	public void setLeaf(boolean leaf) {
-		this.leaf = leaf;
+	public void setLevel(int level) {
+		this.level = level;
 	}
 
 	public List<TreeNode> getChild() {
 		return child;
 	}
 
-	public void setChild(List<TreeNode> child) {
-		this.child = child;
+	public void addChild(TreeNode node) {
+		if (this.child == null) {
+			this.child = new ArrayList<TreeNode>();
+		}
+		
+		this.child.add(node);
+		
+		if (this.child != null && !this.child.isEmpty()) {
+			this.leaf = false;
+		}
 	}
 }
