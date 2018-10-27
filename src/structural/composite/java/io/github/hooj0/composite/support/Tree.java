@@ -22,11 +22,38 @@ public class Tree {
 		root.setName("root");
 	}
 	
+	public Tree(String name) {
+		root.setId(0);
+		root.setName(name);
+	}
+	
 	public TreeNode getRoot() {
 		return root;
 	}
 	
-	public void print() {
+	private String copySpace(String str, int count) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < count; i++) {
+			sb.append(str);
+		}
 		
+		return sb.toString();
+	}
+	
+	public void print(TreeNode node) {
+		
+		if (node != null) {
+			String space = copySpace("  ", node.getLevel());
+			
+			if (node.isLeaf()) {
+				System.out.println(space + "- " + node.getName());
+			} else {
+				System.out.println(space + "+ " + node.getName());
+				
+				for (TreeNode currentNode : node.getChild()) {
+					print(currentNode);
+				}
+			}
+		}
 	}
 }
