@@ -56,4 +56,8 @@ public class Tree {
 			}
 		}
 	}
+	
+	public void print() {
+		this.print(root);
+	}
 }
