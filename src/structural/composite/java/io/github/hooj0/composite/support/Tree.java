@@ -15,4 +15,18 @@ package io.github.hooj0.composite.support;
  */
 public class Tree {
 
+	private TreeNode root = new TreeNode();
+	
+	public Tree() {
+		root.setId(0);
+		root.setName("root");
+	}
+	
+	public TreeNode getRoot() {
+		return root;
+	}
+	
+	public void print() {
+		
+	}
 }
