@@ -20,15 +20,15 @@ public class App {
 	public static void main(String[] args) {
 		
 		Tree tree = new Tree("Java");
-		tree.getRoot().addChild(new TreeNode(1, 1, 0, "io"));
-		tree.getRoot().addChild(new TreeNode(1, 2, 0, "net"));
+		tree.getRoot().addChild(new TreeNode(1, 1, "io"));
+		tree.getRoot().addChild(new TreeNode(1, 2, "net"));
 		
-		TreeNode thread = new TreeNode(1, 3, 0, "thread");
-		thread.addChild(new TreeNode(2, 31, 3, "NEW"));
-		thread.addChild(new TreeNode(2, 32, 3, "RUNNABLE"));
-		thread.addChild(new TreeNode(2, 33, 3, "BLOCKED"));
-		thread.addChild(new TreeNode(2, 34, 3, "WAITING"));
-		thread.addChild(new TreeNode(2, 35, 3, "TERMINATED"));
+		TreeNode thread = new TreeNode(1, 3, "thread");
+		thread.addChild(new TreeNode(2, 31, "NEW"));
+		thread.addChild(new TreeNode(2, 32, "RUNNABLE"));
+		thread.addChild(new TreeNode(2, 33, "BLOCKED"));
+		thread.addChild(new TreeNode(2, 34, "WAITING"));
+		thread.addChild(new TreeNode(2, 35, "TERMINATED"));
 		
 		tree.getRoot().addChild(thread);
 		
