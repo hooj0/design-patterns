@@ -30,8 +30,9 @@ public class App {
 		thread.addChild(new TreeNode(2, 34, "WAITING"));
 		thread.addChild(new TreeNode(2, 35, "TERMINATED"));
 		
+		// tree.print(thread);
 		tree.getRoot().addChild(thread);
 		
-		tree.print(tree.getRoot());
+		tree.print();
 	}
 }
