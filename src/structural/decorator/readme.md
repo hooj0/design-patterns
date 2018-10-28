@@ -24,12 +24,16 @@
 
 
 ## 优点与缺点
++ **优点**
 
++ **缺点**
 
 
 ## 代码实现
+装饰模式的实现要点如下：
 
-
+### 示例参考
++ [装饰模式](./java/io/github/hooj0/decorator/)
 
 ## 应用场景
 
@@ -38,6 +42,11 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
++ `java.io.BufferedInputStream(InputStream)`
++ `java.io.DataInputStream(InputStream)`
++ `java.io.BufferedOutputStream(OutputStream)`
++ `java.util.zip.ZipOutputStream(OutputStream)`
++ `java.util.Collections#checkedList|Map|Set|SortedSet|SortedMap`
 
 ### `GoSDK`
 
