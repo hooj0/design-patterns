@@ -24,10 +24,10 @@
 
 装饰模式包含如下角色：
 
-+ **Component**: 抽象构件
-+ **ConcreteComponent**: 具体构件
-+ **Decorator**: 抽象装饰类
-+ **ConcreteDecorator**: 具体装饰类
++ **Component**: 抽象组件，可以是抽象类或者接口，定义业务的实现方法
++ **ConcreteComponent**: 具体组件，继承**抽象组件**或实现`Component`接口，完成抽象组件的具体业务实现
++ **Decorator**: 抽象装饰类，定义抽象的装饰类或者接口，提供继承或引用；**Decorator**和抽象组件**Component**可以是相同的抽象类和接口
++ **ConcreteDecorator**: 具体装饰类，实现抽象装饰类或接口，并调用抽象组件**Component**完成业务实现
 
 ### UML关系图
 
@@ -45,6 +45,7 @@
 
 ## 代码实现
 装饰模式的实现要点如下：
++ 
 
 ### 示例参考
 + [装饰模式](./java/io/github/hooj0/decorator/)
