@@ -1,7 +1,7 @@
 package io.github.hooj0.decorator.support.association;
 
 /**
- * coffee interface class, defined coffee unsupport method.
+ * coffee interface class, defined coffee method.
  * 定义咖啡接口，提供咖啡价格和咖啡描述方法
  * 
  * @author hoojo
