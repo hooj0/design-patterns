@@ -22,6 +22,6 @@ public class SimpleCoffee implements Coffee {
 
 	@Override
 	public String getDescription() {
-		return "ordinary coffe";
+		return "ordinary coffee";
 	}
 }
