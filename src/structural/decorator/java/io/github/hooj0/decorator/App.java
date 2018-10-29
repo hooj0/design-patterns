@@ -5,6 +5,12 @@ import io.github.hooj0.decorator.support.association.HoneyCoffee;
 import io.github.hooj0.decorator.support.association.MilkCoffee;
 import io.github.hooj0.decorator.support.association.SimpleCoffee;
 import io.github.hooj0.decorator.support.association.VanillaCoffee;
+import io.github.hooj0.decorator.support.extend.BlackTea;
+import io.github.hooj0.decorator.support.extend.ChocolateTeaDecorator;
+import io.github.hooj0.decorator.support.extend.GreenTea;
+import io.github.hooj0.decorator.support.extend.MilkTeaDecorator;
+import io.github.hooj0.decorator.support.extend.Tea;
+import io.github.hooj0.decorator.support.extend.VanillaTeaDecorator;
 
 /**
  * deacorator pattern app client class
@@ -39,5 +45,30 @@ public class App {
 		VanillaCoffee vanillaCoffee2 = new VanillaCoffee(coffee);
 		System.out.println(vanillaCoffee2.getCost()); // 13
 		System.out.println(vanillaCoffee2.getDescription()); // ordinary coffe, add vanilla
+		
+		System.out.println("---------------------------------");
+		Tea blackTea = new MilkTeaDecorator(new BlackTea());
+		System.out.println(blackTea.getCost());	// 15
+		System.out.println(blackTea.getDescription()); // black tea, add milk
+		
+		blackTea = new VanillaTeaDecorator(blackTea);
+		System.out.println(blackTea.getCost()); // 18
+		System.out.println(blackTea.getDescription()); // black tea, add milk, add vanilla
+		
+		blackTea = new ChocolateTeaDecorator(blackTea);
+		System.out.println(blackTea.getCost()); // 26
+		System.out.println(blackTea.getDescription()); // black tea, add milk, add vanilla, add chocolate
+		
+		Tea greenTea = new VanillaTeaDecorator(new GreenTea());
+		System.out.println(greenTea.getCost()); // 13
+		System.out.println(greenTea.getDescription()); // green tea, add vanilla
+		
+		greenTea = new MilkTeaDecorator(greenTea);
+		System.out.println(greenTea.getCost()); // 18
+		System.out.println(greenTea.getDescription()); // green tea, add vanilla, add milk
+		
+		blackTea = new ChocolateTeaDecorator(new VanillaTeaDecorator(new GreenTea()));
+		System.out.println(blackTea.getCost()); // 21
+		System.out.println(blackTea.getDescription()); // green tea, add vanilla, add chocolate
 	}
 }
