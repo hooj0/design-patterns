@@ -1,7 +1,7 @@
 package io.github.hooj0.decorator.support.association;
 
 /**
- * vanilla coffee  interface support
+ * vanilla coffee interface support
  * 香草咖啡业务对象实现类
  * 
  * @author hoojo
