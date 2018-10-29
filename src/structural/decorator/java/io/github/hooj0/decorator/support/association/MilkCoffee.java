@@ -1,7 +1,7 @@
 package io.github.hooj0.decorator.support.association;
 
 /**
- * milk coffee  interface support
+ * milk coffee interface support
  * 牛奶咖啡业务对象实现类
  * 
  * @author hoojo
