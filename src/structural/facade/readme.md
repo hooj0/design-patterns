@@ -45,6 +45,8 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
++ `java.lang.Class`
++ `javax.faces.webapp.FacesServlet`
 
 ### `GoSDK`
 
