@@ -1,7 +1,7 @@
 package io.github.hooj0.facade.support;
 
 /**
- * send message facade class
+ * facade pattern — send message facade class
  * 发送消息门面，提供发送消息的多种接口
  * 
  * @author hoojo
