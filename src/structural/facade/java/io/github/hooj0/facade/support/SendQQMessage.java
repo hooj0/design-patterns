@@ -1,7 +1,7 @@
 package io.github.hooj0.facade.support;
 
 /**
- * send qq message support SendMessage class
+ * facade pattern — send qq message support SendMessage class
  * 发送qq消息业务对象
  * 
  * @author hoojo
