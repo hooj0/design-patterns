@@ -1,7 +1,7 @@
 package io.github.hooj0.facade.support;
 
 /**
- * send WeChat message support SendMessage class
+ * facade pattern — send WeChat message support SendMessage class
  * 发送微信消息业务对象
  *  
  * @author hoojo
