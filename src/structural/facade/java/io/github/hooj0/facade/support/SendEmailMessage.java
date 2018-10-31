@@ -1,6 +1,8 @@
 package io.github.hooj0.facade.support;
 
 /**
+ * facade pattern — send email message support SendMessage class
+ * 发送email消息业务对象
  * 
  * @author hoojo
  * @createDate 2018年10月31日 下午10:50:25
