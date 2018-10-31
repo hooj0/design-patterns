@@ -1,5 +1,7 @@
 package io.github.hooj0.facade;
 
+import io.github.hooj0.facade.support.MessageSendFacade;
+
 /**
  * facade pattern — application client class
  * 
@@ -16,5 +18,11 @@ public class App {
 
 	public static void main(String[] args) {
 
+		MessageSendFacade sendFacade = new MessageSendFacade();
+		
+		sendFacade.sendHeader();
+		sendFacade.sendBody();
+		sendFacade.sendText();
+		sendFacade.sendFooter();
 	}
 }
