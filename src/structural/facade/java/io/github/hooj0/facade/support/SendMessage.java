@@ -1,7 +1,7 @@
 package io.github.hooj0.facade.support;
 
 /**
- * send message abstract class defined
+ * facade pattern — send message abstract class defined
  * 定义发送消息的业务抽象类
  * 
  * @author hoojo
