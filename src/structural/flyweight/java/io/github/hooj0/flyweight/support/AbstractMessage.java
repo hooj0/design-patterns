@@ -21,10 +21,12 @@ public abstract class AbstractMessage implements Message {
 		this.type = type;
 	}
 	
+	// 内部状态变化
 	private String messageHeader() {
 		return this.type + " message header "; 
 	}
 	
+	// 外部状态变化
 	public void sendMessage(String text) {
 		
 		System.out.println(messageHeader() + ", content: " + text + ", " + messageFooter() + "#" + System.identityHashCode(this));
