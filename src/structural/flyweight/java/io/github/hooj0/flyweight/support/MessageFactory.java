@@ -18,6 +18,7 @@ import java.util.Map;
  */
 public class MessageFactory {
 
+	// 进行Flyweight缓存
 	private final Map<String, Message> messages;
 
 	public MessageFactory() {
