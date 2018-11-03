@@ -18,6 +18,7 @@ public class EmailMessage extends AbstractMessage {
 		super(type);
 	}
 
+	// 内部状态变化
 	@Override
 	String messageFooter() {
 		return "email message footer! @" + System.identityHashCode(this);
