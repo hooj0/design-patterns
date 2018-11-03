@@ -22,6 +22,10 @@
 
 ### 参与角色对象
 
++ **Flyweight**: 抽象享元类或接口类，定义享元对象的通用接口方法，也就是外部状态方法
++ **ConcreteFlyweight**: 具体享元类，需要继承或实现**Flyweight**类或接口，完成**Flyweight**接口的方法实现，同时提供内部状态设置。它是可以共享的，在**FlyweightFactory**享元工厂类中会使用它
++ **UnsharedConcreteFlyweight**: 非共享具体享元类
++ **FlyweightFactory**: 享元工厂类
 
 
 ### UML关系图
