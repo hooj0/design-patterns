@@ -18,6 +18,7 @@ public class WeChatMessage extends AbstractMessage {
 		super(type);
 	}
 
+	// 内部状态变化
 	@Override
 	String messageFooter() {
 		return "send wechat message finish! @" + System.identityHashCode(this);
