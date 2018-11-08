@@ -49,6 +49,10 @@
 	- 为了使对象可以共享，享元模式需要将享元对象的状态外部化，而读取外部状态使得**运行时间变长**。
 
 ## 代码实现
+享元模式的实现要点如下：
++ 定义**Flyweight**抽象享元类或接口类，本示例中定义一个 `Message`的**Flyweight**接口，并定义好业务方法，也就是**外部状态**
++ **ConcreteFlyweight**具体享元类去实现`Message`的**Flyweight**接口，同时提供内部状态：构造方法和`messageFooter`方法
++ **FlyweightFactory**享元工厂类`MessageFactory`完成享元对象的实例创建`createMessage`，利用集合对象进行实例共享`Map<String, Message> messages`
 
 ### 示例参考
 + [享元模式](./java/io/github/hooj0/flyweight/)
