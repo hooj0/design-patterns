@@ -27,7 +27,7 @@
 | [装饰  `Decorator`](./src/structural/decorator) | 静态或动态地向对象添加行为                                   | [Java](./src/structural/decorator/java) \| Python \| Go \| JavaScript |
 |  [外观 `Facade`](./src/structural/facade)  | 使用一种类型作为许多其他类型的API                            | [Java](./src/structural/facade/java) \| Python \| Go \| JavaScript |
 | [享元 `Flyweight`](./src/structural/flyweight)  | 重用具有`相似/相同`状态的对象的现有实例以最小化资源使用 :racehorse: | [Java](./src/structural/flyweight/java) \| Python \| Go \| JavaScript |
-|   代理  `Proxy`   | 为对象提供代理以控制其操作                                   | Java \| Python \| Go \| JavaScript |
+|   [代理  `Proxy`](./src/structural/proxy)   | 为对象提供代理以控制其操作                                   | [Java](./src/structural/proxy/java) \| Python \| Go \| JavaScript |
 
 
 
