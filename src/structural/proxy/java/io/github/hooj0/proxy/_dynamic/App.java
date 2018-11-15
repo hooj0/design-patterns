@@ -5,6 +5,7 @@ import io.github.hooj0.proxy._static.support.ImageLoader;
 import io.github.hooj0.proxy._static.support.PhotoImageLoader;
 
 /**
+ * dynamic proxy application client class
  * 
  * @author hoojo
  * @createDate 2018年11月15日 下午9:16:13
