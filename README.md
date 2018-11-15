@@ -35,7 +35,7 @@
 
 |                  模式                   | 描述                                                         |              实现语言              |
 | :-------------------------------------: | ------------------------------------------------------------ | :--------------------------------: |
-| 责任链<br/> ` Chain of Responsibility ` | 通过为对象提供处理请求的机会，<br/>避免将发送方与接收方耦合  | Java \| Python \| Go \| JavaScript |
+| [责任链<br/> ` Chain of Responsibility`](./src/behavioral/chain-of-responsibility) | 通过为对象提供处理请求的机会，<br/>避免将发送方与接收方耦合  | [Java](./src/behavioral/chain-of-responsibility/java) \| Python \| Go \| JavaScript |
 |            命令   `Command`             | 捆绑命令和参数以便稍后调用                                   | Java \| Python \| Go \| JavaScript |
 |          解释器 `Interpreter`           | 通常定义了一个语言的语法，<br/>然后解析相应语法的语句。      | Java \| Python \| Go \| JavaScript |
 |           迭代器  `Iterator`            | 提供一个一致的方法来顺序访问集合中的对象:racehorse::racehorse::racehorse: <br/>这个方法与底层的集合的具体实现无关。 | Java \| Python \| Go \| JavaScript |
