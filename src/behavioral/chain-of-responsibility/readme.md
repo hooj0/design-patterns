@@ -30,11 +30,11 @@
 + **优点**
 	- **降低耦合度**：它将请求的发送者和接收者**解耦**。
 	- **简化了对象**：使得对象**不需要知道链的结构**。 
-	- **极好的灵活性**：增强给对象指派职责的灵活性。通过改变链内的成员或者调动它们的**次序**，允许动态地**新增或者删除责任**。
+	- **极好的灵活性**：增强给对象指派职责的灵活性。通过改变链内的成员或者调动它们的**次序**，允许动态地**新增或删除责任**。
 	- **使用方便**：增加新的请求处理类很方便。
 
 + **缺点**
-	- 不能保证请求一定被接收。 
+	- 不能保证请求**一定被接收**。 
 	- 系统**性能将受到一定影响**，而且在进行代码调试时不太方便，可能会造成循环调用。 
 	- 可能不容易观察运行时的特征，**有碍于除错**。
 
@@ -53,8 +53,8 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
-+ `java.util.logging.Logger#log()`
-+ `javax.servlet.Filter#doFilter()`
++ [`java.util.logging.Logger#log()`](http://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html#log%28java.util.logging.Level,%20java.lang.String%29)
++ [`javax.servlet.Filter#doFilter()`](http://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html#doFilter-javax.servlet.ServletRequest-javax.servlet.ServletResponse-javax.servlet.FilterChain-)
 + [`Apache Commons Chain`](https://commons.apache.org/proper/commons-chain/index.html)
 
 ### `GoSDK`
