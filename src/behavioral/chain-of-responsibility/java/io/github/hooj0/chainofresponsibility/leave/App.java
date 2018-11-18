@@ -3,7 +3,7 @@ package io.github.hooj0.chainofresponsibility.leave;
 import io.github.hooj0.chainofresponsibility.leave.support.LeaveChain;
 
 /**
- * staff leave chain application client 
+ * employee leave chain application client 
  * @author hoojo
  * @createDate 2018年11月17日 下午8:23:09
  * @file App.java
