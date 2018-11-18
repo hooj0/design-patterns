@@ -36,7 +36,10 @@
 	
 ## 代码实现
 命令链模式的实现要点如下：
-+ 
++ 定义 `Receiver` 接收者，完成具体业务实现。
++ 定义`Command` 抽象命令类或接口，定义命令方法。
++ 定义多个`ConcreteCommand` 具体命令类，实现`Command` 抽象命令类或接口，并且提供接收`Receiver` 接收者对象，通过`Receiver` 接收者完成实现命令的业务方法。
++ 定义 `Invoker` 调用者，通过接收不同的`ConcreteCommand` 命令类实现，完成命令的调用执行。
 
 ### 示例参考
 + [命令模式](./java/io/github/hooj0/command/)
