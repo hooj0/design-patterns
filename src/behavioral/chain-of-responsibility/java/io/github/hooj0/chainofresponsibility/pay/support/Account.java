@@ -23,14 +23,18 @@ public abstract class Account {
 		this.balance = balance;
 	}
 	
+	public Account(int balance) {
+		this.balance = balance;
+	}
+	
 	// 支付链核心代码，直到支付成功或异常才停止
-	public void play(int amount) {
+	public void playHandled(int amount) {
 		
 		if (this.canPay(amount)) {
 			this.balance = balance - amount;
 			System.out.println(String.format("Account [%s] pay amount '%s' successful, balance is '%s'.", this.accountType(), amount, balance));
 		} else if (this.next != null) {
-			this.next.play(amount);
+			this.next.playHandled(amount);
 			System.out.println("using next account pay -> " + this.next.accountType());
 		} else {
 			throw new RuntimeException("None of the accounts have enough balance!");
