@@ -15,6 +15,10 @@ package io.github.hooj0.chainofresponsibility.pay.support;
  */
 public class BankAccount extends Account {
 
+	public BankAccount(int balance) {
+		super(balance);
+	}
+
 	public BankAccount(Account next, int balance) {
 		super(next, balance);
 	}
