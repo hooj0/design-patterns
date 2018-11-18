@@ -29,10 +29,10 @@
 
 ### 参与角色对象
 
-+ **Flyweight**: 抽象享元类或接口类，定义享元对象的通用接口方法，也就是外部状态方法
-+ **ConcreteFlyweight**: 具体享元类，需要继承或实现**Flyweight**类或接口，完成**Flyweight**接口的方法实现，同时提供内部状态设置。它是可以共享的，在**FlyweightFactory**享元工厂类中会使用它
-+ **UnsharedConcreteFlyweight**: 非共享具体享元类，不被强制共享的享元类，有些情况下可以不共享一些实现类
-+ **FlyweightFactory**: 享元工厂类，提供生产享元实例接口，并完成享元类实例缓存，对享元类实例共享
++ **`Flyweight` 抽象享元类或接口类**：定义享元对象的通用接口方法，也就是外部状态方法
++ **`ConcreteFlyweight` 具体享元类**：需要继承或实现**Flyweight**类或接口，完成**Flyweight**接口的方法实现，同时提供内部状态设置。它是可以共享的，在**FlyweightFactory**享元工厂类中会使用它
++ **`UnsharedConcreteFlyweight` 非共享具体享元类**：不被强制共享的享元类，有些情况下可以不共享一些实现类
++ **`FlyweightFactory` 享元工厂类**：提供生产享元实例接口，并完成享元类实例缓存，对享元类实例共享
 
 
 ### UML关系图
@@ -50,9 +50,9 @@
 
 ## 代码实现
 享元模式的实现要点如下：
-+ 定义**Flyweight**抽象享元类或接口类，本示例中定义一个 `Message`的**Flyweight**接口，并定义好业务方法，也就是**外部状态**
-+ **ConcreteFlyweight**具体享元类去实现`Message`的**Flyweight**接口，同时提供内部状态：构造方法和`messageFooter`方法
-+ **FlyweightFactory**享元工厂类`MessageFactory`完成享元对象的实例创建`createMessage`，利用集合`Map<String, Message> messages`对象进行实例共享
++ 定义**`Flyweight`**抽象享元类或接口类，本示例中定义一个 `Message`的**`Flyweight`**接口，并定义好业务方法，也就是**外部状态**
++ **`ConcreteFlyweight`**具体享元类去实现`Message`的**`Flyweight`**接口，同时提供内部状态：构造方法和`messageFooter`方法
++ **`FlyweightFactory`**享元工厂类`MessageFactory`完成享元对象的实例创建`createMessage`，利用集合`Map<String, Message> messages`对象进行实例共享
 
 ### 示例参考
 + [享元模式](./java/io/github/hooj0/flyweight/)
