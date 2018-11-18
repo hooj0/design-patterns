@@ -23,11 +23,10 @@
 ### 参与角色对象
 
 装饰模式包含如下角色：
-
-+ **Component**: 抽象组件，可以是抽象类或者接口，定义业务的实现方法
-+ **ConcreteComponent**: 具体组件，继承**抽象组件**或实现`Component`接口，完成抽象组件的具体业务实现
-+ **Decorator**: 抽象装饰类，定义抽象的装饰类或者接口，提供继承或引用；**Decorator**和抽象组件**Component**可以是相同的抽象类和接口
-+ **ConcreteDecorator**: 具体装饰类，实现抽象装饰类或接口，并调用抽象组件**Component**完成业务实现
++ **`Component` 抽象组件**: 可以是抽象类或者接口，定义业务的实现方法
++ **`ConcreteComponent` 具体组件**: 继承**抽象组件**或实现`Component`接口，完成抽象组件的具体业务实现
++ **`Decorator` 抽象装饰类**: 定义抽象的装饰类或者接口，提供继承或引用；**Decorator**和抽象组件**Component**可以是相同的抽象类和接口
++ **`ConcreteDecorator` 具体装饰类**: 实现抽象装饰类或接口，并调用抽象组件**Component**完成业务实现
 
 ### UML关系图
 
@@ -45,7 +44,10 @@
 
 ## 代码实现
 装饰模式的实现要点如下：
-+ 
++ 定义 `Component` 抽象接口组件，定义需要实现的抽象业务的方法
++ 提供 `Component` 抽象接口组件的实现类，即 `ConcreteComponent` 具体组件完成抽象的接口方法实现
++ 定义`Decorator` 抽象装饰类，接收`Component` 抽象接口组件的构造方法，利用`ConcreteComponent` 具体组件完成装饰类的业务方法进行装饰
++ 提供`ConcreteDecorator` 具体装饰类，实现或继承`Decorator`，完成方法的实现
 
 ### 示例参考
 + [装饰模式 —— 关联实现](./java/io/github/hooj0/decorator/support/association)
