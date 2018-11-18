@@ -41,6 +41,9 @@
 
 ## 代码实现
 责任链模式的实现要点如下：
++ 定义 `AbstractHandler` 职责链条对象抽象类，定义其他业务抽象方法让其子类实现。完成 `handler` 职责链条的流转业务，并利用抽象业务方法，同时定义方法接收职责链条，利用链条完成核心业务和向下流转。
++ 定义 `HandlerImplementor` 职责链条对象实现类，完成 `AbstractHandler` 抽象类中的抽象方法实现，并且可以覆盖父类的 `handler` 职责链条的流转业务，完整当前实现类角色的流转流程。
++ 定义`ChainBuilder` 定义职责链构建器，定义职责链条的次序流程和核心接口方法`handler`的调用
 
 ### 示例参考
 + [责任链模式 - 支付](./java/io/github/hooj0/chainofresponsibility/pay)
