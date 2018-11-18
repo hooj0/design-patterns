@@ -19,8 +19,9 @@
 
 
 ### 参与角色对象
-
-
++ **AbstractHandler**：定义职责链条对象抽象类的接口，接收职责链条对象，完成职责链的核心流程流转，并提供其他抽象业务逻辑接口
++ **HandlerImplementor**：定义职责链条对象实现类接口，定义对应于`AbstractHandler`的相关方法实现，可以加入相应的业务逻辑行为
++ **ChainBuilder**：定义职责链构建器，构建职责链的链条顺序或流转流程
 
 ### UML关系图
 
@@ -42,7 +43,8 @@
 责任链模式的实现要点如下：
 
 ### 示例参考
-+ [责任链模式](./java/io/github/hooj0/chain-of-responsibility/)
++ [责任链模式 - 支付](./java/io/github/hooj0/chainofresponsibility/pay)
++ [责任链模式 - 请假](./java/io/github/hooj0/chainofresponsibility/leave)
 
 ## 应用场景
 责任链模式适用于：
