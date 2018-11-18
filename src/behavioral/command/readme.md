@@ -15,33 +15,44 @@
 ## 模式架构
 
 
-
 ### 参与角色对象
 + **`Command` 抽象命令类**：
 + **`ConcreteCommand` 具体命类**：
 + **`Invoker` 调用者**：
 + **`Receiver` 接收者**：
 
-
 ### UML关系图
 
 
-
 ## 优点与缺点
++ **优点**
+	- **低耦合**：降低系统的耦合度。
+	- **灵活、扩展方便**：新的命令可以很容易地加入到系统中。
+	- **简单**：可以比较容易地设计一个命令队列和宏命令（组合命令）。
+	- 可以方便地实现对请求的`Undo`和`Redo`。
 
-
-
++ **缺点**
+	- 使用命令模式可能会导致某些系统有过多的具体命令类。因为针对每一个命令都需要设计一个具体命令类，因此某些系统可能需要大量具体命令类，这将影响命令模式的使用。
+	
 ## 代码实现
 
-
+### 示例参考
++ [命令模式](./java/io/github/hooj0/command/)
 
 ## 应用场景
 
+
+保持请求的历史
+实现回调功能
+实现撤消功能
 
 
 ## 应用实例参考
 
 ### `JavaSDK` 
+- [`java.lang.Runnable`](http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html)
+- [`Netflix Hystrix`](https://github.com/Netflix/Hystrix/wiki)
+- [`javax.swing.Action`](http://docs.oracle.com/javase/8/docs/api/javax/swing/Action.html)
 
 ### `GoSDK`
 
