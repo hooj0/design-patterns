@@ -21,6 +21,6 @@ public class ConsolasFont extends AbstractFont {
 	
 	@Override
 	public String toString() {
-		return "Consolas font";
+		return "consolas-font";
 	}
 }
