@@ -51,7 +51,8 @@
 + 定义 `Invoker` 调用者，通过接收不同的`ConcreteCommand` 命令类实现，完成命令的调用执行。
 
 ### 示例参考
-+ [命令模式](./java/io/github/hooj0/command/)
++ [命令模式 - 遥控器](./java/io/github/hooj0/command/remotecontrol)
++ [命令模式 - 打字机](./java/io/github/hooj0/command/typewriter)
 
 ## 应用场景
 命令模式适用于：
