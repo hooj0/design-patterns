@@ -14,10 +14,12 @@ package io.github.hooj0.command.typewriter.support;
  */
 public abstract class Command {
 
-	public abstract void execute();
+	public abstract void execute(AbstractFont font);
 	
+	// 恢复
 	public abstract void undo();
 	
+	// 重做
 	public abstract void redo();
 	
 	public abstract String toString();
