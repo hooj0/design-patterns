@@ -43,6 +43,11 @@
 
 ### `JavaSDK` 
 
+- [`java.util.Pattern`](http://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
+- [`java.text.Normalizer`](http://docs.oracle.com/javase/8/docs/api/java/text/Normalizer.html)
+- [`java.text.Format - all subclasses`](http://docs.oracle.com/javase/8/docs/api/java/text/Format.html)
+- [`javax.el.ELResolver`](http://docs.oracle.com/javaee/7/api/javax/el/ELResolver.html)
+
 ### `GoSDK`
 
 ### `PythonSDK`
