@@ -15,7 +15,7 @@ package io.github.hooj0.interpreter.support;
  */
 public abstract class Expression {
 
-	public abstract void interpret();
+	public abstract int interpret();
 	
 	@Override
 	public abstract String toString();
