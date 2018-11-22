@@ -15,7 +15,10 @@
 
 
 ### 参与角色对象
-
++ **`Context` 上下文角色**：包含解释器之外的一些全局信息。
++ **`AbstractExpression` 抽象表达式角色**：
++ **`TerminalExpression` 终结符表达式角色**：每个终结符都需要一个 TerminalExpression。
++ **`NonTerminalExpression` 具体表达式角色**：
 
 
 ### UML关系图
