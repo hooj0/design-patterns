@@ -17,7 +17,7 @@
 ### 参与角色对象
 + **`Context` 上下文角色**：包含解释器之外的一些全局信息。
 + **`AbstractExpression` 抽象表达式角色**：抽象出公共的表达式部分，提供子表达式继承使用。
-+ **`TerminalExpression` 终结符表达式角色**：每个终结符都需要一个 TerminalExpression。
++ **`TerminalExpression` 终结符表达式角色**：每个终结符都需要一个 `TerminalExpression`。
 + **`NonTerminalExpression` 具体表达式角色**：实现具体的表达式，完成一个语句中的一个部分的解释。
 
 
