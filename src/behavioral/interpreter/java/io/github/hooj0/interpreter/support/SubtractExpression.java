@@ -14,16 +14,21 @@ package io.github.hooj0.interpreter.support;
  */
 public class SubtractExpression extends Expression {
 
+	private Expression leftExpression;
+	private Expression rightExpression;
+
+	public SubtractExpression(Expression leftExpression, Expression rightExpression) {
+		this.leftExpression = leftExpression;
+		this.rightExpression = rightExpression;
+	}
+	
 	@Override
-	public void interpret() {
-		// TODO Auto-generated method stub
-		
+	public int interpret() {
+		return leftExpression.interpret() - rightExpression.interpret();
 	}
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
+		return "-";
 	}
-
 }
