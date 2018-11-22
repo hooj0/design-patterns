@@ -14,15 +14,21 @@ package io.github.hooj0.interpreter.support;
  */
 public class DivideExpression extends Expression {
 
+	private Expression leftExpression;
+	private Expression rightExpression;
+
+	public DivideExpression(Expression leftExpression, Expression rightExpression) {
+		this.leftExpression = leftExpression;
+		this.rightExpression = rightExpression;
+	}
+	
 	@Override
-	public void interpret() {
-		
+	public int interpret() {
+		return leftExpression.interpret() / rightExpression.interpret();
 	}
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
+		return "/";
 	}
-
 }
