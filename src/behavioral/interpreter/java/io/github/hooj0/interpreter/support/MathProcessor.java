@@ -1,5 +1,7 @@
 package io.github.hooj0.interpreter.support;
 
+import java.util.Stack;
+
 /**
  * expression parser processor
  * 表达式解析器
@@ -16,11 +18,37 @@ package io.github.hooj0.interpreter.support;
 public final class MathProcessor {
 
 	public static int parser(String expression) {
+		Stack<Expression> stack = new Stack<>();
 		
-		return 0;
+		String[] items = expression.split(" ");
+		for (String item : items) {
+			if (isOperator(item)) {
+				Expression rightExpression = stack.pop();
+				Expression leftExpression = stack.pop();
+				System.out.println(String.format("left: %s, right: %s", leftExpression.interpret(), rightExpression.interpret()));
+				
+				Expression operator = getExpression(item, leftExpression, rightExpression);
+				System.out.println("operator: " + operator);
+				
+				int result = operator.interpret();
+				NumberExpression resultExpression = new NumberExpression(result);
+				stack.push(resultExpression);
+				
+				System.out.println(String.format("push result to stack: %s", resultExpression.interpret()));
+			} else {
+				Expression num = new NumberExpression(item);
+				stack.push(num);
+				System.out.println("push to stack: " + num.interpret());
+			}
+		}
+		
+		int data = stack.pop().interpret();
+		System.out.println(String.format("result: %s", data));
+		
+		return data;
 	}
 	
-	public static Expression getExpression(String operator, Expression left, Expression right) {
+	private static Expression getExpression(String operator, Expression left, Expression right) {
 		switch (operator) {
 			case "+":
 				return new AddExpression(left, right);
@@ -35,7 +63,7 @@ public final class MathProcessor {
 		}
 	}
 	
-	public static boolean isOperator(String s) {
+	private static boolean isOperator(String s) {
 		return "+".equals(s) || "-".equals(s) || "*".equals(s) || "/".equals(s);
 	}
 }
