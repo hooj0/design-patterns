@@ -40,7 +40,10 @@
 
 ## 代码实现
 解释器模式的实现要点如下：
-+
++ 定义上下文角色对象`Context`用于接收解析的表达式字符串数据信息。
++ 定义抽象表达式角色`AbstractExpression`，提供抽象方法`interpret()`用于计算单个表达式组合结果。
++ 定义终结符表达式角色`TerminalExpression`，继承`AbstractExpression`，接收字符串将其转换为独立的结果，用于计算表达式之间的数据运算，并实现抽象方法`interpret()`返回转换后的数据。
++ 定义具体表达式角色`NonTerminalExpression`，继承`AbstractExpression`，接收两个`AbstractExpression`的构造参数，并实现抽象方法`interpret()`，计算出结果。
 
 ### 示例参考
 + [解释器模式](./java/io/github/hooj0/interpreter/)
