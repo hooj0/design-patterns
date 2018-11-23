@@ -1,5 +1,7 @@
 package io.github.hooj0.interpreter;
 
+import io.github.hooj0.interpreter.support.MathProcessor;
+
 /**
  * expression application client
  * @author hoojo
@@ -14,6 +16,8 @@ package io.github.hooj0.interpreter;
 public class App {
 
 	public static void main(String[] args) {
-		
+		MathProcessor.parser("4 3 2 - 1 + *");
+
+		MathProcessor.parser("4 2 - 3 + 2 * 5 /");
 	}
 }
