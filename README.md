@@ -39,7 +39,7 @@
 |            [命令   `Command`](./src/behavioral/command)             | 捆绑命令和参数以便稍后调用                                   | [Java](./src/behavioral/command/java) \| Python \| Go \| JavaScript |
 |          [解释器 `Interpreter`](./src/behavioral/interpreter)           | 通常定义了一个语言的语法，<br/>然后解析相应语法的语句。      | [Java](./src/behavioral/interpreter/java) \| Python \| Go \| JavaScript |
 |           [迭代器  `Iterator`](./src/behavioral/iterator)             | 提供一个一致的方法来顺序访问集合中的对象:racehorse::racehorse::racehorse: <br/>这个方法与底层的集合的具体实现无关。 | [Java](./src/behavioral/iterator/java) \| Python \| Go \| JavaScript |
-|           中介者   `Mediator`           | 连接对象并充当代理                                           | Java \| Python \| Go \| JavaScript |
+|           [中介者   `Mediator`](./src/behavioral/mediator)           | 连接对象并充当代理                                           | [Java](./src/behavioral/mediator/java) \| Python \| Go \| JavaScript |
 |            备忘录 `Memento`             | 生成可用于返回先前状态的不透明令牌                           | Java \| Python \| Go \| JavaScript |
 |           观察者  `Observer`            | 提供回调以通知事件/数据更改                                  | Java \| Python \| Go \| JavaScript |
 |             状态 ` State `              | 根据内部状态封装同一对象的不同行为                           | Java \| Python \| Go \| JavaScript |
