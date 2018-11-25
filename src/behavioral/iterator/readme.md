@@ -15,8 +15,10 @@
 
 
 ### 参与角色对象
-
-
++ **`Iterator` 迭代器角色**：接口或抽象类，定义迭代器的方法提供实现接口，主要定义了`hasNext()`和` next()`方法。。
++ **`ConcreteIterator` 具体迭代器实现角色**：继承或实现`Iterator` 迭代器角色，完成`Iterator`中`hasNext()`和` next()`方法的实现。
++ **`Collection` 集合类接口**：定义创建`Iterator`迭代器角色的方法产生一个 `Iterator`对象。
++ **`ConcreteCollection` 具体聚合集合类接口实现**：实现`Collection` 集合类接口，提供创建`Iterator`对象的方法。
 
 ### UML关系图
 
