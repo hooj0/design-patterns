@@ -14,13 +14,12 @@
 通过利用迭代器遍历一个聚合对象，利用不同的方式来遍历整个整合对象，把在元素之间游走的责任交给迭代器，而不是聚合对象。
 
 ### 参与角色对象
-+ **`Iterator` 迭代器角色**：接口或抽象类，定义迭代器的方法提供实现接口，主要定义了`hasNext()`和` next()`方法。。
++ **`Iterator` 迭代器角色**：接口或抽象类，定义迭代器的方法提供实现接口，主要定义了`hasNext()`和` next()`方法。
 + **`ConcreteIterator` 具体迭代器实现角色**：继承或实现`Iterator` 迭代器角色，完成`Iterator`中`hasNext()`和` next()`方法的实现。
 + **`Collection` 集合类接口**：定义创建`Iterator`迭代器角色的方法产生一个 `Iterator`对象。
 + **`ConcreteCollection` 具体聚合集合类接口实现**：实现`Collection` 集合类接口，提供创建`Iterator`对象的方法。
 
 ### UML关系图
-
 
 
 ## 优点与缺点
@@ -35,7 +34,11 @@
 
 ## 代码实现
 迭代器模式的实现要点如下：
-+
++ 定义`Iterator`接口，提供`hasNext()`和` next()`方法，用来遍历和获取迭代器中的元素。
++ 定义`Collection`集合类接口，提供创建`Iterator`接口的方法。
++ 实现`Collection`集合类接口的`ConcreteCollection` 具体聚合集合类，实现创建`Iterator`接口的方法，并设置迭代器的迭代集合对象。
++ 实现`Iterator`迭代器接口的`ConcreteIterator` 具体迭代器实现类，通过构造函数接收`Collection`对象，利用`Collection`对象中的方法和集合实现迭代器中的方法。
+
 
 ### 示例参考
 + [迭代器模式](./java/io/github/hooj0/iterator/)
