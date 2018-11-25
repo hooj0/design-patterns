@@ -5,10 +5,10 @@
 |                 行为型模式                           |                ★★★ :arrow_down:                 |                  ★★★ :arrow_up:                   |                    ★★★★ :arrow_up:                    |              :green_heart:  :arrow_up:               |        :green_heart:  :arrow_up:         |
 
 ## 概念
-迭代器模式（`Iterator Pattern`）是编程环境中非常常用的设计模式。这种模式**用于顺序访问集合对象的元素**，不需要知道集合对象的**底层实现**，迭代器模式属于**行为型模式**。
+迭代器模式（`Iterator Pattern`）是编程环境中常用的设计模式，这种模式**用于顺序访问集合对象的元素**，不需要知道集合对象的**底层实现**，迭代器模式属于**行为型模式**。
 
 ## 用途
-
+提供一种方法**顺序访问**一个聚合对象中**各个元素**， 而又**无须暴露**该对象的内部表示。主要解决**不同的方式来遍历整个聚合集合对象**。
 
 ## 模式架构
 
@@ -44,6 +44,8 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
+- [java.util.Iterator](http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html)
+- [java.util.Enumeration](http://docs.oracle.com/javase/8/docs/api/java/util/Enumeration.html)
 
 ### `GoSDK`
 
