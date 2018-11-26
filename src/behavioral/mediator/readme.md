@@ -33,7 +33,7 @@
 	- 各个类之间的解耦。
 	- 减少子类生成。
 	- 可以简化各同事类的设计和实现。
-	- 符合迪米特原则
+	- 符合迪米特原则。
 
 + **缺点**
 	+ 在具体中介者类中包含了同事之间的**交互细节**，可能会导致具体中介者类**非常复杂**，使得**系统难以维护**。
@@ -56,6 +56,11 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
+- All scheduleXXX() methods of [java.util.Timer](http://docs.oracle.com/javase/8/docs/api/java/util/Timer.html)
+- [java.util.concurrent.Executor#execute()](http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html#execute-java.lang.Runnable-)
+- submit() and invokeXXX() methods of [java.util.concurrent.ExecutorService](http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html)
+- scheduleXXX() methods of [java.util.concurrent.ScheduledExecutorService](http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html)
+- [java.lang.reflect.Method#invoke()](http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html#invoke-java.lang.Object-java.lang.Object...-)
 
 ### `GoSDK`
 
