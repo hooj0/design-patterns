@@ -1,4 +1,4 @@
-package io.github.hooj0.mediator.support;
+package io.github.hooj0.mediator.chatroom.support;
 
 import java.util.Date;
 
@@ -11,7 +11,7 @@ import org.apache.commons.lang3.time.DateFormatUtils;
  * @author hoojo
  * @createDate 2018年11月26日 下午10:51:04
  * @file ChatRoom.java
- * @package io.github.hooj0.mediator.support
+ * @package io.github.hooj0.mediator.chatroom.support
  * @project design-patterns
  * @blog http://hoojo.cnblogs.com
  * @email hoojo_@126.com
