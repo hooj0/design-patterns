@@ -1,8 +1,8 @@
-package io.github.hooj0.mediator;
+package io.github.hooj0.mediator.chatroom;
 
-import io.github.hooj0.mediator.support.ChatRoom;
-import io.github.hooj0.mediator.support.ChatRoomMediator;
-import io.github.hooj0.mediator.support.User;
+import io.github.hooj0.mediator.chatroom.support.ChatRoom;
+import io.github.hooj0.mediator.chatroom.support.ChatRoomMediator;
+import io.github.hooj0.mediator.chatroom.support.User;
 
 /**
  * mediator application client
@@ -10,7 +10,7 @@ import io.github.hooj0.mediator.support.User;
  * @author hoojo
  * @createDate 2018年11月26日 下午10:58:48
  * @file App.java
- * @package io.github.hooj0.mediator
+ * @package io.github.hooj0.mediator.chatroom
  * @project design-patterns
  * @blog http://hoojo.cnblogs.com
  * @email hoojo_@126.com
