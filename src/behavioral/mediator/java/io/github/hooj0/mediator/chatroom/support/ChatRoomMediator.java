@@ -1,4 +1,4 @@
-package io.github.hooj0.mediator.support;
+package io.github.hooj0.mediator.chatroom.support;
 
 /**
  * chat room mediator 
@@ -6,7 +6,7 @@ package io.github.hooj0.mediator.support;
  * @author hoojo
  * @createDate 2018年11月26日 下午10:35:38
  * @file ChatRoomMediator.java
- * @package io.github.hooj0.mediator.support
+ * @package io.github.hooj0.mediator.chatroom.support
  * @project design-patterns
  * @blog http://hoojo.cnblogs.com
  * @email hoojo_@126.com
