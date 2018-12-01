@@ -33,8 +33,8 @@ public class PartyImpl implements Party {
 	@Override
 	public void revel(PartyMember actor, ShowType type) {
 		for (PartyMember member : members) {
-			if (member.equals(actor)) {
-				member.revelShow(type);
+			if (!member.equals(actor)) {
+				member.partyShow(type);
 			}
 		}
 	}
