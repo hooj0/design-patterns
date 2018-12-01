@@ -33,6 +33,7 @@ public abstract class AbstractPartyMember implements PartyMember {
 	public void revelShow(ShowType type) {
 		if (party != null) {
 			System.out.println(this + " " + type + " " + type.getDescription());
+			party.revel(this, type);
 		}
 	}
 	
