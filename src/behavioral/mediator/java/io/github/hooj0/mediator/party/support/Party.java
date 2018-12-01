@@ -1,8 +1,8 @@
 package io.github.hooj0.mediator.party.support;
 
 /**
- * party interface defined 
- * 派对接口定义
+ * party interface defined, join party members and carnival show methods
+ * 派对接口定义加入派对成员和狂欢节目秀方法
  * 
  * @author hoojo
  * @createDate 2018年11月29日 下午11:02:55
