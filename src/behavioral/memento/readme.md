@@ -34,7 +34,8 @@
 +
 
 ### 示例参考
-+ [备忘录模式](./java/io/github/hooj0/memento/)
++ [备忘录模式 - 花开花落](./java/io/github/hooj0/memento/flower)
++ [备忘录模式](./java/io/github/hooj0/memento/flower)
 
 ## 应用场景
 备忘录模式适用于：
