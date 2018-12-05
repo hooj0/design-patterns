@@ -2,6 +2,7 @@ package io.github.hooj0.memento.editor;
 
 import java.util.Stack;
 
+import io.github.hooj0.memento.editor.support.CareTaker;
 import io.github.hooj0.memento.editor.support.Editor;
 import io.github.hooj0.memento.editor.support.Memento;
 import io.github.hooj0.memento.editor.support.TextEditor;
@@ -55,5 +56,31 @@ public class App {
 			editor.restore(states.pop());
 			System.out.println(editor.getContent());
 		}
+		
+		// CareTaker mode
+		// ---------------------------------------------------
+		CareTaker taker = new CareTaker();
+		
+		editor = new TextEditor();
+		editor.setContent("content #1");
+		taker.add(editor.save());
+		System.out.println(editor.getContent());
+		
+		editor.setContent("content #2");
+		taker.add(editor.save());
+		System.out.println(editor.getContent());
+		
+		editor.setContent("content #3");
+		taker.add(editor.save());
+		System.out.println(editor.getContent());
+		
+		editor.restore(taker.pop());
+		System.out.println(editor.getContent());
+		
+		editor.restore(taker.pop());
+		System.out.println(editor.getContent());
+		
+		editor.restore(taker.pop());
+		System.out.println(editor.getContent());
 	}
 }
