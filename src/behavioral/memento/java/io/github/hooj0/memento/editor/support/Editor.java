@@ -15,6 +15,8 @@ package io.github.hooj0.memento.editor.support;
  */
 public interface Editor {
 
+	public void setContent(String content);
+	
 	public String getContent();
 	
 	public Memento save();
