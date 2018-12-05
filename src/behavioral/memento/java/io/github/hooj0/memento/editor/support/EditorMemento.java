@@ -15,8 +15,14 @@ package io.github.hooj0.memento.editor.support;
  */
 public class EditorMemento implements Memento {
 
+	private String content;
+	
+	public EditorMemento(String content) {
+		this.content = content;
+	}
+	
 	@Override
 	public String getContent() {
-		return null;
+		return this.content;
 	}
 }
