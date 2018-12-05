@@ -2,7 +2,7 @@ package io.github.hooj0.memento.editor.support;
 
 /**
  * editor interface defined
- * 编辑器接口定义
+ * Originator：原始对象， 编辑器接口定义
  * 
  * @author hoojo
  * @createDate 2018年12月6日 下午11:22:16
