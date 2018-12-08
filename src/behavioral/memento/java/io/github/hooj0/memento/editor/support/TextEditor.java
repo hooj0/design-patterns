@@ -21,6 +21,11 @@ public class TextEditor implements Editor {
 	public String getContent() {
 		return this.content;
 	}
+	
+	@Override
+	public void setContent(String content) {
+		this.content = content;
+	}
 
 	@Override
 	public Memento save() {
@@ -30,10 +35,5 @@ public class TextEditor implements Editor {
 	@Override
 	public void restore(Memento memento) {
 		this.content = memento.getContent();
-	}
-
-	@Override
-	public void setContent(String content) {
-		this.content = content;
 	}
 }
