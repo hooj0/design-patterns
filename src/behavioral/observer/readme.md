@@ -15,7 +15,10 @@
 
 
 ### 参与角色对象
-
++ **`Subject`: 目标**，
++ **`ConcreteSubject`: 具体目标**，
++ **`Observer`: 观察者**，
++ **`ConcreteObserver`: 具体观察者**，
 
 
 ### UML关系图
@@ -29,14 +32,14 @@
 
 
 ## 代码实现
-模式的实现要点如下：
+观察者模式的实现要点如下：
 +
 
 ### 示例参考
-+ [模式](./java/io/github/hooj0/)
++ [观察者模式](./java/io/github/hooj0/observer)
 
 ## 应用场景
-模式适用于：
+观察者模式适用于：
 +
 
 ## 应用实例参考
