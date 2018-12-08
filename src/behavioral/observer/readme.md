@@ -46,6 +46,12 @@
 
 ### `JavaSDK` 
 
+- [`java.util.Observer`](http://docs.oracle.com/javase/8/docs/api/java/util/Observer.html)
+- [`java.util.EventListener`](http://docs.oracle.com/javase/8/docs/api/java/util/EventListener.html)
+- [`javax.servlet.http.HttpSessionBindingListener`](http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSessionBindingListener.html)
+- `javax.servlet.http.HttpSessionAttributeListener`
+- [`RxJava`](https://github.com/ReactiveX/RxJava)
+
 ### `GoSDK`
 
 ### `PythonSDK`
