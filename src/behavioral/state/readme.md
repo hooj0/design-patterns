@@ -1,4 +1,4 @@
-# xxx `xxx`
+# 状态 ` State `
 
 | :sparkles:模式类型:sparkles::sparkles:|:sparkles::sparkles:难度:sparkles:  :sparkles: | :sparkles::sparkles:实用性:sparkles::sparkles: | :sparkles::sparkles:重要程度:sparkles::sparkles: |  :sparkles::sparkles:经典性:sparkles::sparkles: | :sparkles::sparkles:历史性:sparkles: |
 | :----------------------------------------: | :-----------------------------------------------: | :-------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------: |
@@ -29,14 +29,14 @@
 
 
 ## 代码实现
-模式的实现要点如下：
+状态模式的实现要点如下：
 +
 
 ### 示例参考
-+ [模式](./java/io/github/hooj0/)
++ [状态模式](./java/io/github/hooj0/state)
 
 ## 应用场景
-模式适用于：
+状态模式适用于：
 +
 
 ## 应用实例参考
