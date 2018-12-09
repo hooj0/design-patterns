@@ -1,5 +1,9 @@
 package io.github.hooj0.observer;
 
+import io.github.hooj0.observer.support.CentralChina;
+import io.github.hooj0.observer.support.SouthChina;
+import io.github.hooj0.observer.support.Weather;
+
 /**
  * observer pattern application client
  * @author hoojo
@@ -15,5 +19,13 @@ public class App {
 
 	public static void main(String[] args) {
 
+		Weather weather = new Weather();
+		new CentralChina(weather); // constructor register
+		weather.registerObserver(new SouthChina());
+		
+		weather.nextDay();
+		weather.nextDay();
+		weather.nextDay();
+		weather.nextDay();
 	}
 }
