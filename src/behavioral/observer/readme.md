@@ -2,7 +2,7 @@
 
 | :sparkles:模式类型:sparkles::sparkles:|:sparkles::sparkles:难度:sparkles:  :sparkles: | :sparkles::sparkles:实用性:sparkles::sparkles: | :sparkles::sparkles:重要程度:sparkles::sparkles: |  :sparkles::sparkles:经典性:sparkles::sparkles: | :sparkles::sparkles:历史性:sparkles: |
 | :----------------------------------------: | :-----------------------------------------------: | :-------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------: |
-|                  行为型模式                          |                ★★★★★ :arrow_down:                 |                  ★★★★★ :arrow_up:                   |                    ★★★★★ :arrow_up:                    |              :green_heart:  :arrow_up:               |        :green_heart:  :arrow_up:         |
+|                  行为型模式                          |                ★★★ :arrow_down:                 |                  ★★★★ :arrow_up:                   |                    ★★★★ :arrow_up:                    |              :green_heart:  :arrow_up:               |        :green_heart:  :arrow_up:         |
 
 ## 概念
 观察者模式(`Observer Pattern`)：定义对象间的**一种一对多**依赖关系，使得每当一个对象**状态发生改变**时，其**相关依赖对象皆得到通知并被自动更新**。观察者模式又叫做**发布-订阅**（`Publish/Subscribe`）模式、**模型-视图**（`Model/View`）模式、**源-监听器**（`Source/Listener`）模式或**从属者**（`Dependents`）模式。观察者模式是一种对象**行为型模式**。
