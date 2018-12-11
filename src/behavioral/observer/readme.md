@@ -17,10 +17,10 @@
 
 
 ### 参与角色对象
-+ **`Subject`: 目标**，
-+ **`ConcreteSubject`: 具体目标**，
-+ **`Observer`: 观察者**，
-+ **`ConcreteObserver`: 具体观察者**，
++ **`Subject`: 目标**，具有**注册和移除观察者、并通知所有观察者的功能**，主题是通过维护一张观察者列表来实现这些操作的。
++ **`ConcreteSubject`: 具体目标**，实现`Subject`接口并完成**观察者注册、移除观察者、通知观察者**。
++ **`Observer`: 观察者**，注册功能需要调用主题的  `registerObserver()` 方法。
++ **`ConcreteObserver`: 具体观察者**，可以有多个不同的观察者对目标进行观察。
 
 
 ### UML关系图
