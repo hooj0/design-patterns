@@ -52,6 +52,9 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
++ `java.util.Iterator`
++ [`javax.faces.lifecycle.LifeCycle#execute()`](http://docs.oracle.com/javaee/7/api/javax/faces/lifecycle/Lifecycle.html#execute-javax.faces.context.FacesContext-)
++ [`JDiameter - Diameter State Machine`](https://github.com/npathai/jdiameter/blob/master/core/jdiameter/api/src/main/java/org/jdiameter/api/app/State.java)
 
 ### `GoSDK`
 
