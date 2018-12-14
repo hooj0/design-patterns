@@ -42,6 +42,9 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
++ `java.util.Comparator#compare()`
++ `javax.servlet.http.HttpServlet`
++ `javax.servlet.Filter#doFilter()`
 
 ### `GoSDK`
 
