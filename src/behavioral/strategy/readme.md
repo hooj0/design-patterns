@@ -15,7 +15,9 @@
 
 
 ### 参与角色对象
-
++ **`Context`: 环境类**，
++ **`Strategy`: 抽象策略类**，
++ **`ConcreteStrategy`: 具体策略类**，
 
 
 ### UML关系图
