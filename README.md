@@ -43,7 +43,7 @@
 |            [备忘录 `Memento`](./src/behavioral/memento)             | 生成可用于返回先前状态的不透明令牌                           | [Java](./src/behavioral/memento/java) \| Python \| Go \| JavaScript |
 |           [观察者  `Observer`](./src/behavioral/observer)            | 提供回调以通知事件/数据更改                                  | [Java](./src/behavioral/observer/java) \| Python \| Go \| JavaScript |
 |             [状态 ` State `](./src/behavioral/state)              | 根据内部状态封装同一对象的不同行为                           | [Java](./src/behavioral/state/java) \| Python \| Go \| JavaScript |
-|            策略 ` Strategy `            | 允许在运行时选择算法的行为                                   | Java \| Python \| Go \| JavaScript |
+|            [策略 ` Strategy `](./src/behavioral/strategy)            | 允许在运行时选择算法的行为                                   | [Java](./src/behavioral/strategy/java) \| Python \| Go \| JavaScript |
 |    模板方法 <br/>` Template Method`     | 定义一个框架类将某些方法推迟到子类中实现                     | Java \| Python \| Go \| JavaScript |
 |           访问者 ` Visitor `            | 将算法与其运行的对象分开                                     | Java \| Python \| Go \| JavaScript |
 |              空对象 `Null`              | 通过一个无意义的对象来代替没有对象这个状态<br/>它使得你不用额外对空对象进行处理。 | Java \| Python \| Go \| JavaScript |
