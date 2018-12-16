@@ -37,4 +37,9 @@ public class Keyboard {
 	public void recovery() {
 		this.state.onSpeedState();
 	}
+	
+	@Override
+	public String toString() {
+		return "键盘按键";
+	}
 }
