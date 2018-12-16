@@ -27,14 +27,14 @@ public class Keyboard {
 	}
 	
 	public void rap() {
-		this.state.onSpeedState();
-	}
-	
-	public void recovery() {
 		if (this.state.getClass().equals(KeyPressState.class)) {
 			this.changeStateTo(new KeyFreedState(this));
 		} else {
 			this.changeStateTo(new KeyPressState(this));
 		}
+	}
+	
+	public void recovery() {
+		this.state.onSpeedState();
 	}
 }
