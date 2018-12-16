@@ -15,7 +15,9 @@ package io.github.hooj0.state.support;
  */
 public interface State {
 
+	// 状态
 	public void onEnterState();
 	
+	// 行为
 	public void onSpeedState();
 }
