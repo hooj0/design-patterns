@@ -18,10 +18,10 @@ public class App {
 	public static void main(String[] args) {
 		Keyboard keyboard = new Keyboard();
 		
-		keyboard.recovery();
 		keyboard.rap();
+		keyboard.recovery();
 		
-		keyboard.recovery();
 		keyboard.rap();
+		keyboard.recovery();
 	}
 }
