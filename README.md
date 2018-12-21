@@ -45,7 +45,7 @@
 |             [状态 ` State `](./src/behavioral/state)              | 根据内部状态封装同一对象的不同行为                           | [Java](./src/behavioral/state/java) \| Python \| Go \| JavaScript |
 |            [策略 ` Strategy `](./src/behavioral/strategy)            | 允许在运行时选择算法的行为                                   | [Java](./src/behavioral/strategy/java) \| Python \| Go \| JavaScript |
 |    [模板方法 <br/>` Template Method`](./src/behavioral/template-method)     | 定义一个框架类将某些方法推迟到子类中实现                     | [Java](./src/behavioral/template-method/java) \| Python \| Go \| JavaScript |
-|           访问者 ` Visitor `            | 将算法与其运行的对象分开                                     | Java \| Python \| Go \| JavaScript |
+|           [访问者 ` Visitor `](./src/behavioral/visitor)            | 将算法与其运行的对象分开                                     | [Java](./src/behavioral/visitor/java) \| Python \| Go \| JavaScript |
 |              空对象 `Null`              | 通过一个无意义的对象来代替没有对象这个状态<br/>它使得你不用额外对空对象进行处理。 | Java \| Python \| Go \| JavaScript |
 |             注册 `Registry`             | 跟踪给定类的所有子类                                         | Java \| Python \| Go \| JavaScript |
 
