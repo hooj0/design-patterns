@@ -48,7 +48,10 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
-
++ `java.util.Collections#sort()`
++ `java.io.InputStream#skip()`
++ `java.io.InputStream#read()`
++ `java.util.AbstractList#indexOf()`
 
 ### `GoSDK`
 
