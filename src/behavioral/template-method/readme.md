@@ -15,8 +15,8 @@
 
 
 ### 参与角色对象
-+ ** `AbstractTemplate`：抽象模板类**，抽象模板类定义具体模板类需要实现的不同的方法，将相同或复杂的方法在抽象模板类中完成。
-+ ** `ConcreteTemplate`：具体模板类**，继承`AbstractTemplate`抽象模板类完成未实现的或需要实现的方法。
++ **`AbstractTemplate`：抽象模板类**，抽象模板类定义具体模板类需要实现的不同的方法，将相同或复杂的方法在抽象模板类中完成。
++ **`ConcreteTemplate`：具体模板类**，继承`AbstractTemplate`抽象模板类完成未实现的或需要实现的方法。
 
 ### UML关系图
 
