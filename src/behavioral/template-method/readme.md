@@ -33,7 +33,9 @@
 
 ## 代码实现
 模板方法模式的实现要点如下：
-+ 定义
++ 定义`AbstractTemplate`抽象模板类，在类中完成通用公共的方法实现，将不同的方法定义为抽象方法供子类去实现。同时在抽象类中提供行为控制的方法，完成业务。
++ 定义`ConcreteTemplate`具体模板类，继承`AbstractTemplate`抽象模板类完成未实现的抽象方法。
++ 可选的定义`StrategyContext`策略上下文对象，进行切换不同的`ConcreteTemplate`具体模板类，在策略上下文对象中调用`AbstractTemplate`抽象模板类完成业务和模板类的选择切换。
 
 ### 示例参考
 + [模板方法模式](./java/io/github/hooj0/templatemethod)
