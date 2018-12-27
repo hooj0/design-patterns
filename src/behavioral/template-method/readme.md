@@ -36,7 +36,7 @@
 +
 
 ### 示例参考
-+ [模板方法模式](./java/io/github/hooj0/)
++ [模板方法模式](./java/io/github/hooj0/templatemethod)
 
 ## 应用场景
 模板方法模式适用于：
