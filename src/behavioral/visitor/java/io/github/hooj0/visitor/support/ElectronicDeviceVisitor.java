@@ -5,13 +5,13 @@ package io.github.hooj0.visitor.support;
  * Visitor 接口或者抽象类
  * @author hoojo
  * @createDate 2019年1月2日 下午10:37:47
- * @file ComputerComponentVisitor.java
+ * @file ElectronicDeviceVisitor.java
  * @package io.github.hooj0.visitor.support
  * @project design-patterns
  * @blog http://hoojo.cnblogs.com
  * @email hoojo_@126.com
  * @version 1.0
  */
-public interface ComputerComponentVisitor {
+public interface ElectronicDeviceVisitor {
 
 }
