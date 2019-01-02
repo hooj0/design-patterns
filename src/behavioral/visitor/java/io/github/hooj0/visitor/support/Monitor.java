@@ -2,6 +2,7 @@ package io.github.hooj0.visitor.support;
 
 /**
  * monitor visitor element
+ * 监视器  Element 抽象实现
  * @author hoojo
  * @createDate 2019年1月2日 下午10:55:49
  * @file Monitor.java
@@ -11,10 +12,10 @@ package io.github.hooj0.visitor.support;
  * @email hoojo_@126.com
  * @version 1.0
  */
-public class Monitor extends AbstractComputerComponent {
+public class Monitor extends AbstractElectronicDevice {
 
 	@Override
-	public void accept(ComputerComponentVisitor componentVisitor) {
+	public void accept(ElectronicDeviceVisitor deviceVisitor) {
 		
 	}
 }
