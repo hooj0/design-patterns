@@ -14,8 +14,19 @@ package io.github.hooj0.visitor.support;
  */
 public class Phone extends AbstractElectronicDevice {
 
+	private ElectronicDevice[] devices;
+	
+	public Phone() {
+		devices = new ElectronicDevice[] { new Keyboard(), new Monitor() }; 
+	}
+	
 	@Override
 	public void accept(ElectronicDeviceVisitor deviceVisitor) {
 		
+		for (ElectronicDevice device : devices) {
+			device.accept(deviceVisitor);
+		}
+		
+		deviceVisitor.visitPhone(this);
 	}
 }
