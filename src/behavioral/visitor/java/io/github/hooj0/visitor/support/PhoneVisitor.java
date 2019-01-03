@@ -21,21 +21,20 @@ public class PhoneVisitor implements ElectronicDeviceVisitor {
 
 	@Override
 	public void visitPhone(Phone phone) {
-		
+		System.out.println("phone: " + phone);
 	}
 
 	@Override
 	public void visitKeyboard(Keyboard keyboard) {
-		
+		System.out.println("keyboard: " + keyboard);
 	}
 
 	@Override
 	public void visitMonitor(Monitor monitor) {
-		
+		System.out.println("monitor: " + monitor);
 	}
 
 	@Override
 	public void visitMouse(Mouse mouse) {
-		
 	}
 }
