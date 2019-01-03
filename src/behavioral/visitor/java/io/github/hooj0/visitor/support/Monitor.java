@@ -16,6 +16,6 @@ public class Monitor extends AbstractElectronicDevice {
 
 	@Override
 	public void accept(ElectronicDeviceVisitor deviceVisitor) {
-		
+		deviceVisitor.visitMonitor(this);
 	}
 }
