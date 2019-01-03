@@ -16,6 +16,6 @@ public class Mouse extends AbstractElectronicDevice {
 
 	@Override
 	public void accept(ElectronicDeviceVisitor deviceVisitor) {
-		
+		deviceVisitor.visitMouse(this);
 	}
 }
