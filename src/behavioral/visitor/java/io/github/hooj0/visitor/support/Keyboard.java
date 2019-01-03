@@ -16,6 +16,6 @@ public class Keyboard extends AbstractElectronicDevice {
 
 	@Override
 	public void accept(ElectronicDeviceVisitor deviceVisitor) {
-		
+		deviceVisitor.visitKeyboard(this);
 	}
 }
