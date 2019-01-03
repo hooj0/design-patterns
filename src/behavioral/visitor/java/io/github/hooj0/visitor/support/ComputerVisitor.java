@@ -16,29 +16,25 @@ public class ComputerVisitor implements ElectronicDeviceVisitor {
 
 	@Override
 	public void visitComputer(Computer computer) {
-		
+		System.out.println("Computer: " + computer);
 	}
 
 	@Override
 	public void visitPhone(Phone phone) {
-		
 	}
 
 	@Override
 	public void visitKeyboard(Keyboard keyboard) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("keyboard: " + keyboard);
 	}
 
 	@Override
 	public void visitMonitor(Monitor monitor) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Monitor: " + monitor);
 	}
 
 	@Override
 	public void visitMouse(Mouse mouse) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Mouse: " + mouse);
 	}
 }
