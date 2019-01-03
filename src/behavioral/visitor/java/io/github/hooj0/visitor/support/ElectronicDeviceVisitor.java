@@ -14,4 +14,7 @@ package io.github.hooj0.visitor.support;
  */
 public interface ElectronicDeviceVisitor {
 
+	void visitComputer(Computer computer);
+	
+	void visitPhone(Phone phone);
 }
