@@ -23,4 +23,19 @@ public class PhoneVisitor implements ElectronicDeviceVisitor {
 	public void visitPhone(Phone phone) {
 		
 	}
+
+	@Override
+	public void visitKeyboard(Keyboard keyboard) {
+		
+	}
+
+	@Override
+	public void visitMonitor(Monitor monitor) {
+		
+	}
+
+	@Override
+	public void visitMouse(Mouse mouse) {
+		
+	}
 }
