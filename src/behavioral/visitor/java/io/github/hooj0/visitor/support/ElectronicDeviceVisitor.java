@@ -17,4 +17,10 @@ public interface ElectronicDeviceVisitor {
 	void visitComputer(Computer computer);
 	
 	void visitPhone(Phone phone);
+
+	void visitKeyboard(Keyboard keyboard);
+	
+	void visitMonitor(Monitor monitor);
+	
+	void visitMouse(Mouse mouse);
 }
