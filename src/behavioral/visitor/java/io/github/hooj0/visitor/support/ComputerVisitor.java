@@ -23,4 +23,22 @@ public class ComputerVisitor implements ElectronicDeviceVisitor {
 	public void visitPhone(Phone phone) {
 		
 	}
+
+	@Override
+	public void visitKeyboard(Keyboard keyboard) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void visitMonitor(Monitor monitor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void visitMouse(Mouse mouse) {
+		// TODO Auto-generated method stub
+		
+	}
 }
