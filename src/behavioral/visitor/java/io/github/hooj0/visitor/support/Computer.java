@@ -13,9 +13,20 @@ package io.github.hooj0.visitor.support;
  * @version 1.0
  */
 public class Computer extends AbstractElectronicDevice {
+	
+	private ElectronicDevice[] devices;
+	
+	public Computer() {
+		devices = new ElectronicDevice[] { new Keyboard(), new Mouse(), new Monitor() }; 
+	}
 
 	@Override
 	public void accept(ElectronicDeviceVisitor deviceVisitor) {
 		
+		for (ElectronicDevice device : devices) {
+			device.accept(deviceVisitor);
+		}
+		
+		deviceVisitor.visitComputer(this);
 	}
 }
