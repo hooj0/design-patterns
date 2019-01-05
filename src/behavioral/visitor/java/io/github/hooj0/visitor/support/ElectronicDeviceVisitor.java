@@ -3,6 +3,8 @@ package io.github.hooj0.visitor.support;
 /**
  * visitor component interface defined   
  * Visitor 接口或者抽象类
+ * 
+ * `Visitor`：访问者接口或者抽象类
  * @author hoojo
  * @createDate 2019年1月2日 下午10:37:47
  * @file ElectronicDeviceVisitor.java
