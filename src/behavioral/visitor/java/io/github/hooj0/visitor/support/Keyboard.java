@@ -14,7 +14,7 @@ package io.github.hooj0.visitor.support;
  * @email hoojo_@126.com
  * @version 1.0
  */
-public class Keyboard extends AbstractElectronicDevice {
+public class Keyboard implements ElectronicDevice {
 
 	@Override
 	public void accept(ElectronicDeviceVisitor deviceVisitor) {

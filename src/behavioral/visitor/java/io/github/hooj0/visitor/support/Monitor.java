@@ -14,7 +14,7 @@ package io.github.hooj0.visitor.support;
  * @email hoojo_@126.com
  * @version 1.0
  */
-public class Monitor extends AbstractElectronicDevice {
+public class Monitor implements ElectronicDevice {
 
 	@Override
 	public void accept(ElectronicDeviceVisitor deviceVisitor) {

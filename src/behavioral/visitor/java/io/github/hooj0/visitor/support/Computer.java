@@ -14,7 +14,7 @@ package io.github.hooj0.visitor.support;
  * @email hoojo_@126.com
  * @version 1.0
  */
-public class Computer extends AbstractElectronicDevice {
+public class Computer implements ElectronicDevice {
 	
 	//`ObjectStructure`：定义当中所提到的对象结构
 	private ElectronicDevice[] devices;
