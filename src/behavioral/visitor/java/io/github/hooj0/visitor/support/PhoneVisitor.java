@@ -3,6 +3,8 @@ package io.github.hooj0.visitor.support;
 /**
  * phone visitor Electronic Device implements
  * phone 电子设备 具体的访问类
+ * 
+ * `ConcreteVisitor`：具体的访问者
  * @author hoojo
  * @createDate 2019年1月3日 下午10:00:42
  * @file PhoneVisitor.java
