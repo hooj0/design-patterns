@@ -3,6 +3,8 @@ package io.github.hooj0.visitor.support;
 /**
  * monitor visitor element
  * 监视器  Element 抽象实现
+ * 
+ * `ConcreteElement`：具体的元素类
  * @author hoojo
  * @createDate 2019年1月2日 下午10:55:49
  * @file Monitor.java
