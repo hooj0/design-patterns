@@ -44,7 +44,10 @@
 ## 应用实例参考
 
 ### `JavaSDK` 
-
++ `java.util.Collections#emptyList()`
++ `java.util.Collections#emptyMap()`
++ `java.util.Collections#emptySet()`
+	
 ### `GoSDK`
 
 ### `PythonSDK`
