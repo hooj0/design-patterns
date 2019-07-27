@@ -37,7 +37,7 @@
 + 实现 `Subject` 目标接口中的所有方法，在方法中不做任何事。
 
 ### 示例参考
-+ [模式](./java/io/github/hooj0/nullobject/)
++ [空对象模式](./java/io/github/hooj0/nullobject/)
 
 ## 应用场景
 空对象模式适用于：
