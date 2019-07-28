@@ -23,6 +23,8 @@
 
 ### UML关系图
 
+![1564199431050](D:\work_private\design-patterns\.images\1564199431050.png)
+
 
 ## 优点与缺点
 + **优点**
