@@ -1,5 +1,7 @@
 package io.github.hooj0.registry;
 
+import io.github.hooj0.registry.singleton.support.RegistrySingleton;
+
 /**
  * registry design pattern application client
  * @author hoojo
@@ -15,5 +17,9 @@ public class App {
 
 	public static void main(String[] args) {
 		
+		System.out.println(RegistrySingleton.newInstance("Web"));
+		System.out.println(RegistrySingleton.newInstance("Dao"));
+		System.out.println(RegistrySingleton.newInstance("Service"));
+		System.out.println(RegistrySingleton.newInstance("Web").getModuleNames());
 	}
 }
